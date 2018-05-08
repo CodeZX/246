@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>profile_head_img</string>
+		<key>title</key>
+		<string>头像</string>
+	</dict>
+	<dict>
+		<key>subTitle</key>
+		<string>王二</string>
+		<key>title</key>
+		<string>姓名</string>
+	</dict>
+	<dict>
+		<key>subTitle</key>
+		<string>13866666555</string>
+		<key>title</key>
+		<string>手机</string>
+	</dict>
+</array>
+</plist>

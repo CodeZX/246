@@ -1,0 +1,403 @@
+//
+//  ZXAllDetailCategoryController.m
+//  WangYe
+//
+//  Created by Mars on 2017/2/19.
+//  Copyright © 2017年 YG. All rights reserved.
+//
+
+#import "ZXAllDetailCategoryController.h"
+#import "ZXAllDetailPicCell.h"
+#import "ZXAllDetailTextCell.h"
+#import "ZXAllDetailMovieCell.h"
+#import "ZXAllDetailCategoryItem.h"
+#import "ZXAllDetailPhotoBrowerController.h"
+#import "ZXListDetailMovieController.h"
+#import "ZXEssenceWebController.h"
+#import "ZXListDetailMovieController.h"
+@interface ZXAllDetailCategoryController ()<UITableViewDelegate, UITableViewDataSource>
+/** 图片视图 */
+@property(nonatomic, strong) UIImageView *iconIV;
+/** 背景图片 */
+@property(nonatomic, strong) UIView *TopNavView;
+/** 表头标题 */
+@property(nonatomic, strong) UILabel *headLabel;
+/** 表头视图 */
+@property(nonatomic, strong) UIView *headView;
+/** 表视图 */
+@property(nonatomic, strong) UITableView *tableView;
+/** 返回按钮 */
+@property(nonatomic, strong) UIButton *backBtn;
+/** 列表数组 */
+@property(nonatomic, strong) NSMutableArray *detailCategoryArr;
+/** 页数 */
+@property(nonatomic, assign) NSInteger pageNum;
+/** 是否能够加载更过 */
+@property(nonatomic, strong) NSString *canLoadMore;
+
+
+
+
+
+@end
+
+@implementation ZXAllDetailCategoryController
+
+#pragma mark - 构造方法
+- (instancetype)initWithImageName:(NSString *)imageName labelName:(NSString *)labelName ID:(NSString *)ID
+{
+    self = [super init];
+    if (self) {
+        self.imageName = imageName;
+        self.labelName = labelName;
+        self.ID = ID;
+    }
+    return self;
+}
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self configUI];
+    
+    [self configNetManager];
+    
+    //注册TableViewCell
+    [self.tableView registerClass:[ZXAllDetailPicCell class] forCellReuseIdentifier:@"ZXAllDetailPicCell"];
+    [self.tableView registerClass:[ZXAllDetailTextCell class] forCellReuseIdentifier:@"ZXAllDetailTextCell"];
+    [self.tableView registerClass:[ZXAllDetailMovieCell class] forCellReuseIdentifier:@"ZXAllDetailMovieCell"];
+}
+#pragma mark - 网络请求
+- (void)configNetManager
+{
+    __weak typeof(self) weakSelf = self;
+    
+    [NetManager GETAllDetailCategory:1 ID:self.ID completionHandler:^(ZXAllDetailCategoryItem *allDetailCategoryItem, NSError *error) {
+        if (error) {
+            [self.view showMessage:@"网络有误..."];
+        } else {
+            [self.tableView endHeaderRefresh];
+            self.pageNum = 1;
+            self.canLoadMore = allDetailCategoryItem.canLoadMore;
+            [self.detailCategoryArr addObjectsFromArray:allDetailCategoryItem.articleList];
+            [self.tableView reloadData];
+            if ([allDetailCategoryItem.canLoadMore isEqualToString:@"0"]) {
+                [self.tableView endFooterWithNoMore];
+            }
+        }
+    }];
+    
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [NetManager GETAllDetailCategory:self.pageNum + 1 ID:weakSelf.ID completionHandler:^(ZXAllDetailCategoryItem *allDetailCategoryItem, NSError *error) {
+            [self.tableView endFooterRefresh];
+            if (error) {
+                [weakSelf.view showMessage:@"网络有误..."];
+            } else
+            {
+                weakSelf.pageNum += 1;
+                weakSelf.canLoadMore = allDetailCategoryItem.canLoadMore;
+                [weakSelf.detailCategoryArr addObjectsFromArray:allDetailCategoryItem.articleList];
+                [weakSelf.tableView reloadData];
+                if ([allDetailCategoryItem.canLoadMore isEqualToString:@"0"]) {
+                    [weakSelf.tableView endFooterWithNoMore];
+                }
+            }
+            
+        }];
+        
+    }];
+    
+    
+}
+
+- (void)configUI
+{
+    CGFloat scale = 365 / 750.0;
+    
+    /**
+     *  配置tableView
+     */
+    self.tableView = [[UITableView alloc] init];
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.offset(0);
+    }];
+    
+    /**
+     *  表头视图背景
+     */
+    self.headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, YGScreenW, YGScreenW * scale)];
+    self.tableView.tableHeaderView = self.headView;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    
+    /**
+     *  配置背景图片
+     */
+    self.iconIV = [[UIImageView alloc] init];
+    self.iconIV.contentMode = UIViewContentModeScaleAspectFill;
+    self.iconIV.clipsToBounds = YES;
+    [self.iconIV setImageWithURL:self.imageName.yg_URL placeholder:[UIImage imageNamed:@"placeHolder1"]];
+    [self.headView addSubview:self.iconIV];
+    self.iconIV.frame = self.headView.frame;
+    
+    
+    /**
+     *  导航视图View
+     */
+    self.TopNavView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, YGScreenW, 64)];
+    self.TopNavView.backgroundColor = YGRGBColor(254, 254, 254);
+    /*********/
+    self.TopNavView.layer.shadowColor = [UIColor blackColor].CGColor;//shadowColor阴影颜色
+    self.TopNavView.layer.shadowOffset = CGSizeMake(0,0);
+    self.TopNavView.layer.shadowOpacity = 0.6;//阴影透明度，默认0
+    self.TopNavView.layer.shadowRadius = 5;//阴影半径，默认3
+    /*********/
+    self.TopNavView.hidden = YES;
+    [self.view addSubview:self.TopNavView];
+    
+    /**
+     *  导航视图上面的标题
+     */
+    UILabel *topLabel = [[UILabel alloc] init];
+    [self.TopNavView addSubview:topLabel];
+    topLabel.font = [UIFont systemFontOfSize:19];
+    topLabel.text = self.labelName;
+    [topLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.offset(0);
+        make.centerY.offset(10);
+    }];
+    
+    /**
+     *  返回按钮
+     */
+    self.backBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.backBtn setBackgroundImage:[UIImage imageNamed:@"Action_backward_white_44x44_"] forState:UIControlStateNormal];
+    [self.view addSubview:self.backBtn];
+    self.backBtn.frame = CGRectMake(5, 20, 44, 44);
+    [self.backBtn addTarget:self action:@selector(goBackLastVC) forControlEvents:UIControlEventTouchUpInside];
+    
+    /**
+     *  表视图文字
+     */
+    self.headLabel = [[UILabel alloc] init];
+    self.headLabel.font = [UIFont boldSystemFontOfSize:17];
+    self.headLabel.textColor = [UIColor whiteColor];
+    self.headLabel.text = self.labelName;
+    [self.iconIV addSubview:self.headLabel];
+    [self.headLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.offset(0);
+    }];
+    
+}
+
+#pragma mark - 返回上一界面按钮
+- (void)goBackLastVC
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - <UITableViewDatasource>
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.detailCategoryArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZXAllDetailCategoryArticlelistItem *articleItem = self.detailCategoryArr[indexPath.row];
+    /**
+     *  新闻分类
+     */
+    if ([articleItem.objectType isEqualToString:@"1"]) {
+        ZXAllDetailTextCell *textCell = [tableView dequeueReusableCellWithIdentifier:@"ZXAllDetailTextCell" forIndexPath:indexPath];
+        textCell.titleLB.text = articleItem.object.title;
+        [textCell.iconIV setImageWithURL:articleItem.object.imgUrl.yg_URL placeholder:[UIImage imageNamed:@"placeHolder1"]];
+        return textCell;
+    }
+    
+    /**
+     *  电影分类
+     */
+    if ([articleItem.objectType isEqualToString:@"2"]) {
+        ZXAllDetailMovieCell *movieCell = [tableView dequeueReusableCellWithIdentifier:@"ZXAllDetailMovieCell" forIndexPath:indexPath];
+        [movieCell.iconIV setImageWithURL:articleItem.object.coverUrl.yg_URL placeholder:[UIImage imageNamed:@"placeHolder1"]];
+        movieCell.titleLB.text = articleItem.object.title;
+        //如果为空就用空字符串代替
+        if (articleItem.object.des == nil) {
+            movieCell.detailLB.text = @"";
+        } else {
+            movieCell.detailLB.text = articleItem.object.des;
+        }
+        return movieCell;
+    }
+    
+    /**
+     *  图片分类
+     */
+    ZXAllDetailPicCell *picCell = [tableView dequeueReusableCellWithIdentifier:@"ZXAllDetailPicCell" forIndexPath:indexPath];
+    [picCell.iconIV setImageWithURL:articleItem.object.imgUrl.yg_URL placeholder:[UIImage imageNamed:@"placeHolder1"]];
+    picCell.titleLB.text = articleItem.object.des;
+    
+    
+    picCell.detailLB.text = [NSString stringWithFormat:@"《%@》", articleItem.object.sourceAuthor];
+    
+    
+    return picCell;
+}
+
+#pragma mark - <UITableViewDdelegate>
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZXAllDetailCategoryArticlelistItem *articleItem = self.detailCategoryArr[indexPath.row];
+    /**
+     *  新闻分类
+     */
+    if ([articleItem.objectType isEqualToString:@"1"]) {
+        ZXEssenceWebController *webVC = [[ZXEssenceWebController alloc] initWithAppView:articleItem.object.articleContentUrl];
+//        NSLog(@"%@", articleItem.object.articleContentUrl);
+        [self.navigationController pushViewController:webVC animated:YES];
+    }
+    
+    /**
+     *  电影分类
+     */
+    if ([articleItem.objectType isEqualToString:@"2"]) {
+        NSString *bgImage = @"http://img.kaiyanapp.com/65b83a4433a6a0db122cb3e1d7ff6076.jpeg?imageMogr2/quality/60/format/jpg";
+        ZXListDetailMovieController *movieVC = [[ZXListDetailMovieController alloc] initWithBgImageView:bgImage titleView:articleItem.object.coverUrl detailLabel:articleItem.object.title url:articleItem.object.videoUrl];
+        
+        [self.navigationController pushViewController:movieVC animated:YES];
+    }
+    
+    /**
+     *  图片分类
+     */
+    if ([articleItem.objectType isEqualToString:@"6"]) {
+        ZXAllDetailPhotoBrowerController *phtotVC = [[ZXAllDetailPhotoBrowerController alloc] initWithImgUrl:articleItem.object.imgUrl desLB:articleItem.object.des];
+        [self.navigationController pushViewController:phtotVC animated:YES];
+    }
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+
+#pragma mark - <生命周期方法>
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //去掉TableView的线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //是否隐藏导航栏
+    self.navigationController.navigationBarHidden = YES;
+    //是否隐藏电池条
+    [UIApplication sharedApplication].statusBarHidden = YES;
+    
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    //是否隐藏导航栏
+    self.navigationController.navigationBarHidden = NO;
+    //是否隐藏电池条
+    [UIApplication sharedApplication].statusBarHidden = NO;
+}
+
+//是否隐藏导航条
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    //是否隐藏电池条
+    [UIApplication sharedApplication].statusBarHidden = NO;
+}
+
+
+#pragma mark - <UIScrollViewDelegage>
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat scale = 365 / 750.0;
+    
+    CGPoint p = scrollView.contentOffset;
+
+    if (p.y >= YGScreenW * scale - 64) {
+        
+        self.TopNavView.hidden = NO;
+        [self.backBtn setBackgroundImage:[UIImage imageNamed:@"Action_backward_44x44_"] forState:UIControlStateNormal];
+        [UIApplication sharedApplication].statusBarHidden = NO;
+    } else {
+        self.TopNavView.hidden = YES;
+        [self.backBtn setBackgroundImage:[UIImage imageNamed:@"Action_backward_white_44x44_"] forState:UIControlStateNormal];
+        [UIApplication sharedApplication].statusBarHidden = YES;
+    }
+    
+    [self.headLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.center.offset(0);
+    }];
+    
+    
+    if (p.y >= 0) { //这里向上移动图片不变小
+        self.iconIV.frame = CGRectMake(0, 0, YGScreenW, YGScreenW * scale);
+        return;
+    }
+    CGRect frame = self.headView.frame;
+    frame.size.height = YGScreenW * scale - p.y;
+    frame.origin.y = p.y;
+    self.iconIV.frame = frame;
+    NSLog(@"%lf-------%lf", p.y, YGScreenW * scale - 64);
+}
+
+#pragma mark - 高性能计算行高
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZXAllDetailCategoryArticlelistItem *articleItem = self.detailCategoryArr[indexPath.row];
+    
+    if ([articleItem.objectType isEqualToString:@"1"]) {
+        return [tableView fd_heightForCellWithIdentifier:@"ZXAllDetailTextCell" configuration:^(ZXAllDetailTextCell *cell) {
+            
+            [cell.iconIV setImageWithURL:articleItem.object.imgUrl.yg_URL placeholder:[UIImage imageNamed:@"placeHolder1"]];
+        }];
+    }
+    
+    if ([articleItem.objectType isEqualToString:@"2"]) {
+        return [tableView fd_heightForCellWithIdentifier:@"ZXAllDetailMovieCell" configuration:^(ZXAllDetailMovieCell *cell) {
+            [cell.iconIV setImageWithURL:articleItem.object.coverUrl.yg_URL placeholder:[UIImage imageNamed:@"placeHolder1"]];
+            cell.titleLB.text = articleItem.object.title;
+            //如果为空就用空字符串代替
+            if (articleItem.object.des == nil) {
+                cell.detailLB.text = @"";
+            } else {
+                cell.detailLB.text = articleItem.object.des;
+            }
+        }];
+    }
+    
+    return [tableView fd_heightForCellWithIdentifier:@"ZXAllDetailPicCell" configuration:^(ZXAllDetailPicCell *cell) {
+        [cell.iconIV setImageWithURL:articleItem.object.imgUrl.yg_URL placeholder:[UIImage imageNamed:@"placeHolder1"]];
+        cell.titleLB.text = articleItem.object.des;
+        cell.detailLB.text = [NSString stringWithFormat:@"《%@》", articleItem.object.sourceAuthor];
+    }];
+    
+    
+}
+
+
+
+#pragma mark - lazy
+- (NSMutableArray *)detailCategoryArr {
+    if(_detailCategoryArr == nil) {
+        _detailCategoryArr = [[NSMutableArray alloc] init];
+    }
+    return _detailCategoryArr;
+}
+
+
+
+@end
