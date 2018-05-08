@@ -28,7 +28,8 @@
         UINavigationBar * navbar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[ZXNavigationViewController class]]];
         
         //获取导航条颜色
-        UIColor * navColor = RGB(235, 140, 43);
+//        UIColor * navColor = RGB(235, 140, 43);
+        UIColor *navColor = YGRGBColor(60 , 158, 243);
         //把颜色生成图片
         UIImage * alphaImg = [UIImage imageWithColor:navColor];
         [navbar setBackgroundImage:alphaImg forBarMetrics:UIBarMetricsDefault];

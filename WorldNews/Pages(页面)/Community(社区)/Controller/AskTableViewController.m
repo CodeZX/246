@@ -200,8 +200,10 @@ static NSString * pageNum = @"20";
 - (UIButton *)addButton {
     if (!_addButton) {
         _addButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_addButton setImage:[UIImage imageNamed:@"icon_add"] forState:UIControlStateNormal];
+//        [_addButton setImage:[UIImage imageNamed:@"icon_add"] forState:UIControlStateNormal];
+        [_addButton setTitle:@"+" forState:UIControlStateNormal];
         [_addButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _addButton.backgroundColor = YGRGBColor(60 , 158, 243);
         [_addButton addTarget:self action:@selector(tiwenButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         _addButton.layer.cornerRadius = 25;
         _addButton.clipsToBounds = YES;

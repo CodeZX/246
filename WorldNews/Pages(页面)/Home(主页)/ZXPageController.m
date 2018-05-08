@@ -23,14 +23,14 @@ NSString * const Kstring = @"1";
 - (instancetype)init
 {
     if (self = [super init]) {
-        self.menuBGColor = YGRGBColor(249, 249, 249);
+        self.menuBGColor = YGRGBColor(60 , 158, 243); 
         
         self.menuViewStyle = WMMenuViewStyleLine;
         self.menuViewLayoutMode = WMMenuViewLayoutModeCenter;
         self.titleSizeNormal = 14;
         self.titleSizeSelected = 16;
         
-        self.titleColorSelected = [UIColor orangeColor];
+        self.titleColorSelected = [UIColor whiteColor];
 //        self.automaticallyCalculatesItemWidths = YES; //根据题目的内容自动算宽度
         self.itemMargin = 30; //题目的间距
         self.menuHeight = 44;
@@ -66,7 +66,7 @@ NSString * const Kstring = @"1";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setRooVC];
+//    [self setRooVC];
 
 }
 

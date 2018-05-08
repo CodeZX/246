@@ -30,9 +30,9 @@
 #pragma mark - 全局属性
 - (void)allPropertySetup
 {
-    [UITabBar appearance].tintColor = YGRGBColor(67, 67, 67);
-    [UINavigationBar appearance].tintColor = YGRGBColor(67, 67, 67);
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: YGRGBColor(67, 67, 67)} forState:UIControlStateSelected];
+    [UITabBar appearance].tintColor = YGRGBColor(60,158,243);
+    [UINavigationBar appearance].tintColor = YGRGBColor(60,158,243);
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: YGRGBColor(60, 58,243)} forState:UIControlStateSelected];
     
     [UIImageView appearance].contentMode = UIViewContentModeScaleAspectFill;
     [UIImageView appearance].clipsToBounds = YES;
@@ -47,7 +47,7 @@
     ZXPageController *pageVC = [[ZXPageController alloc] init];
     pageVC.tabBarItem.image = @"icon_home_nor".yg_image;
     pageVC.tabBarItem.selectedImage = @"icon_home_pre".yg_image;
-    pageVC.title = @"天下资讯";
+    pageVC.title = @"246简讯";
     ZXNavigationViewController *homeNavi = [[ZXNavigationViewController alloc] initWithRootViewController:pageVC];
     
     ZXListController *listVC = [[ZXListController alloc] initWithCollectionViewLayout:[[ZXListFlowLayout alloc] init]];

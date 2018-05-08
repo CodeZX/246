@@ -32,11 +32,13 @@
     [self netWorking];
     [self setHeadView];
 
+    self.tableView.contentInset = UIEdgeInsetsMake(-20, 0, 0, 0);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+   
     [self netWorking];
     [self.view addSubview:self.tableView];
 
