@@ -41,7 +41,7 @@ NSString * const Kstring = @"1";
 
 - (NSArray<NSString *> *)titles
 {
-    return @[@"最新", @"精华", @"分类"];
+    return @[@"最新", @"推荐", @"分类"];
 }
 
 
@@ -67,6 +67,7 @@ NSString * const Kstring = @"1";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    [self setRooVC];
+    
 
 }
 

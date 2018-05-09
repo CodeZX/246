@@ -18,8 +18,8 @@
         _titleLB.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_titleLB];
         [_titleLB mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.offset(10);
-            make.right.mas_equalTo(self.iconIV.mas_left).offset(-10);
+            make.right.offset(-10);
+            make.left.mas_equalTo(self.iconIV.mas_right).offset(10);
             make.centerY.offset(0);
         }];
         
@@ -34,9 +34,9 @@
         _iconIV = [[YYAnimatedImageView alloc] init];
         [self.contentView addSubview:_iconIV];
         [_iconIV mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.right.offset(0);
+            make.top.left.offset(0);
             CGFloat scale = 38 / 64.0;
-            make.width.mas_equalTo(YGScreenW / 2.0);
+            make.width.mas_equalTo(YGScreenW / 2.0 - 40);
             make.height.mas_equalTo(_iconIV.mas_width).multipliedBy(scale);
         }];
     }

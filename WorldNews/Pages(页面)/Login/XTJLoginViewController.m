@@ -169,7 +169,7 @@
         _phoneTextField.textColor = [UIColor blackColor];
         _phoneTextField.font = [UIFont systemFontOfSize:15];
         _phoneTextField.returnKeyType = UIReturnKeyNext;//return键变成什么键
-        _phoneTextField.keyboardType = UIKeyboardTypeDefault;
+        _phoneTextField.keyboardType = UIKeyboardTypeNumberPad;
         _phoneTextField.delegate = self;
     }
     return _phoneTextField;
@@ -243,5 +243,12 @@
         _secondLineView.backgroundColor = [UIColor grayColor];
     }
     return _secondLineView;
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [self.phoneTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
 }
 @end

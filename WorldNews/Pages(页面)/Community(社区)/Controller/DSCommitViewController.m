@@ -346,7 +346,17 @@ static NSString *kTempFolder = @"temp";
 
 //提交
 - (void)commitButtonAction{
-    [self ds_netWorkingWithPic:self.picString];
+    
+    if([self.title isEqualToString:@"评论"]) {
+        
+        [self ds_commentsNetWorkingWithPic:self.picString];
+        
+    }else {
+        
+         [self ds_netWorkingWithPic:self.picString];
+        
+    }
+   
 }
 
 #pragma mark - 网络请求
@@ -360,7 +370,9 @@ static NSString *kTempFolder = @"temp";
 //评论
 - (void)ds_commentsNetWorkingWithPic:(NSString *)pic {
     
-    
+    [NetManager POSTCommentUserId:[JFSaveTool objectForKey:@"UserID"]  text:pic completionHandler:^(XTJRegisterItem *allCommunity, NSError *error) {
+         [self.navigationController popViewControllerAnimated:YES];
+    }];
 }
 
 //上传图片到OSS

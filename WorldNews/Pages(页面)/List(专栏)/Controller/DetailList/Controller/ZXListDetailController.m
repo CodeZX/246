@@ -36,7 +36,7 @@
     [super viewDidLoad];
     //去掉TableView的线
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.view.backgroundColor = YGRGBColor(235, 140, 43);
+    self.view.backgroundColor = [UIColor whiteColor];
     [self configNetManager];
     self.tableView.rowHeight = 200;
 }

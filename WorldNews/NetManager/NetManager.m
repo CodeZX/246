@@ -12,7 +12,7 @@
 
 //注册
 + (id)POSTRegisterPhone:(NSString *)phone pwd:(NSString *)pwd completionHandler:(void(^)(XTJRegisterItem *essences, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/user/register";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/user/register";
     
     NSDictionary * param = @{@"phone_num":phone,@"pwd":pwd};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
@@ -22,7 +22,7 @@
 
 //登录
 + (id)POSTloginPhone:(NSString *)phone pwd:(NSString *)pwd completionHandler:(void(^)(XTJLoginItem *essences, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/user/login";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/user/login";
     
     NSDictionary * param = @{@"phone_num":phone,@"pwd":pwd};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
@@ -111,7 +111,7 @@
 //社区所有帖子
 + (id)GETAllCommunityID:(NSString *)ID completionHandler:(void(^)(XTJCommunity *allCommunity, NSError *error))completionHandler {
     
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/card/show";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/card/show";
     
     NSDictionary * param = @{@"user_id":ID};
 
@@ -122,7 +122,7 @@
 
 //举报帖子
 + (id)POSTReportCardId:(NSString *)cardId userID:(NSString *)userId completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/card/report";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/card/report";
     NSDictionary * param = @{@"user_id":userId,@"card_id":cardId};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
         !completionHandler ?: completionHandler([XTJRegisterItem Parse:obj], error);
@@ -131,7 +131,7 @@
 
 //删除帖子
 + (id)POSTDeleteCardId:(NSString *)cardId completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/card/delete";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/card/delete";
     NSDictionary * param = @{@"card_id":cardId};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
         !completionHandler ?: completionHandler([XTJRegisterItem Parse:obj], error);
@@ -140,7 +140,7 @@
 
 //帖子点赞
 + (id)POSTJoinLikeCardId:(NSString *)cardId userId:(NSString *)userId completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/card/join_like";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/card/join_like";
     NSDictionary * param = @{@"card_id":cardId,@"user_id":userId};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
         !completionHandler ?: completionHandler([XTJRegisterItem Parse:obj], error);
@@ -149,7 +149,7 @@
 
 //帖子取消点赞
 + (id)POSTDeleteLikeCardId:(NSString *)cardId userId:(NSString *)userId completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/card/card/delete_like";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/card/card/delete_like";
     NSDictionary * param = @{@"card_id":cardId,@"user_id":userId};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
         !completionHandler ?: completionHandler([XTJRegisterItem Parse:obj], error);
@@ -158,16 +158,24 @@
 
 //发帖
 + (id)POSTUploadUserId:(NSString *)userId title:(NSString *)title text:(NSString *)text pic:(NSString *)pic completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/card/upload";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/card/upload";
     NSDictionary * param = @{@"user_id":userId,@"title":title,@"text":text,@"pic":pic};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
         !completionHandler ?: completionHandler([XTJRegisterItem Parse:obj], error);
     }];
 }
+// 发表评论
 
++ (id)POSTCommentUserId:(NSString *)userId  text:(NSString *)text  completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler {
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/comments/add";
+    NSDictionary * param = @{@"user_id":userId,@"text":text,};
+    return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
+        !completionHandler ?: completionHandler([XTJRegisterItem Parse:obj], error);
+    }];
+}
 //个人中心
 + (id)POSTPersonalID:(NSString *)userID completionHandler:(void(^)(XTJMineItem *essences, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/user/personal";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/user/personal";
     
     NSDictionary * param = @{@"user_id":userID};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
@@ -177,7 +185,7 @@
 
 //我的话题
 + (id)POSTMyCardUserId:(NSString *)userId completionHandler:(void(^)(XTJCommunity *allCommunity, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/user/my_card";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/user/my_card";
     
     NSDictionary * param = @{@"user_id":userId};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
@@ -187,7 +195,7 @@
 
 //修改用户资料
 + (id)POSTModifyUserId:(NSString *)userId name:(NSString *)name pic:(NSString *)pic completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/user/personal";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/user/modify";
     NSDictionary * param = @{@"user_id":userId,@"name":name,@"profile_pic":pic};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
         !completionHandler ?: completionHandler([XTJRegisterItem Parse:obj], error);
@@ -196,7 +204,7 @@
 
 //反馈
 + (id)POSTFeedBackUserId:(NSString *)userId comments:(NSString *)comments completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler {
-    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_community/back/feedBack";
+    NSString *path = @"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/start_page/feedback";
     NSDictionary * param = @{@"user_id":userId,@"feedBack_Comments":comments};
     return [self POST:path param:param completionHandler:^(id obj, NSError *error) {
         !completionHandler ?: completionHandler([XTJRegisterItem Parse:obj], error);

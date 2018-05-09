@@ -197,6 +197,7 @@ static NSString * const reuseIdentifier = @"Cell";
     YGEssenceResponseFeedsItem *feedsItem = self.essenceArr[indexPath.section];
     if (feedsItem.type != 0) {
         ZXEssenceWebController *webVC = [[ZXEssenceWebController alloc] initWithAppView:feedsItem.post.appview];
+//        webVC.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:webVC animated:YES];
     }
     

@@ -200,22 +200,31 @@ NSString * const kJPushAppKey = @"c2fa18fc5422dcbbf673ba2f";
     [self getLaunchAnimateUrl];
 }
 - (void)getLaunchAnimateUrl {
-    [NEAFNetworkingHelper GETWithUrl:@"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_currency/tianxiazixun/logo" params:nil success:^(id response) {
-        NSDictionary *responseDic = (NSDictionary *)response;
-        NSDictionary *dataDic = [responseDic objectForKey:@"retData"];
-        
-        UIView *launchView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:ScreenBounds];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",dataDic[@"logo"]]]];
-        imageView.center = launchView.center;
-        [launchView addSubview:imageView];
-        DSLaunchAnimateViewController *launchCtrl = [[DSLaunchAnimateViewController alloc]initWithContentView:launchView animateType:DSLaunchAnimateTypePointZoomOut1 showSkipButton:YES];
-        [launchCtrl show];
-        //        [NSThread sleepForTimeInterval:1.0];
-    } fail:^(NSError *error) {
-        return ;
-    } showHUD:nil];
+//    [NEAFNetworkingHelper GETWithUrl:@"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_currency/tianxiazixun/logo" params:nil success:^(id response) {
+//        NSDictionary *responseDic = (NSDictionary *)response;
+//        NSDictionary *dataDic = [responseDic objectForKey:@"retData"];
+//
+//        UIView *launchView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//        UIImageView *imageView = [[UIImageView alloc]initWithFrame:ScreenBounds];
+//        [imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",dataDic[@"logo"]]]];
+//        imageView.center = launchView.center;
+//        [launchView addSubview:imageView];
+//        DSLaunchAnimateViewController *launchCtrl = [[DSLaunchAnimateViewController alloc]initWithContentView:launchView animateType:DSLaunchAnimateTypeFade showSkipButton:YES];
+//        [launchCtrl show];
+//        //        [NSThread sleepForTimeInterval:1.0];
+//    } fail:^(NSError *error) {
+//        return ;
+//    } showHUD:nil];
     
+    
+    UIView *launchView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:ScreenBounds];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://host-119-148-162-231.iphost.gotonets.com:8080/246flash/img/logo.png"]];
+    imageView.center = launchView.center;
+    [launchView addSubview:imageView];
+    DSLaunchAnimateViewController *launchCtrl = [[DSLaunchAnimateViewController alloc]initWithContentView:launchView animateType:DSLaunchAnimateTypeFade showSkipButton:YES];
+    [launchCtrl show];
+    [NSThread sleepForTimeInterval:1.0];
 }
 
 @end

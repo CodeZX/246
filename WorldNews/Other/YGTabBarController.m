@@ -51,13 +51,13 @@
     ZXNavigationViewController *homeNavi = [[ZXNavigationViewController alloc] initWithRootViewController:pageVC];
     
     ZXListController *listVC = [[ZXListController alloc] initWithCollectionViewLayout:[[ZXListFlowLayout alloc] init]];
-    listVC.title = @"视频";
+    listVC.title = @"精选";
     listVC.tabBarItem.image = @"icon_video_nor".yg_image;
     listVC.tabBarItem.selectedImage = @"icon_video_pre".yg_image;
     ZXNavigationViewController *listNavi = [[ZXNavigationViewController alloc] initWithRootViewController:listVC];
     
     AskTableViewController *askVC = [[AskTableViewController alloc] init];
-    askVC.title = @"社区";
+    askVC.title = @"论坛";
     askVC.tabBarItem.image = @"icon_cummunity_nor".yg_image;
     askVC.tabBarItem.selectedImage = @"icon_cummunity_pre".yg_image;
     ZXNavigationViewController *askNavi = [[ZXNavigationViewController alloc] initWithRootViewController:askVC];

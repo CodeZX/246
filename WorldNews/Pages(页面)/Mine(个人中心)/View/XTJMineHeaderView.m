@@ -50,7 +50,7 @@
 - (UIImageView *)bgImageView {
     if (!_bgImageView) {
         _bgImageView = [[UIImageView alloc] initWithFrame:self.bounds];
-        _bgImageView.image = [UIImage imageNamed:@"icon_portraitbg"];
+        _bgImageView.image = [UIImage imageNamed:@"back"];
     }
     return _bgImageView;
 }

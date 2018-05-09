@@ -52,7 +52,7 @@
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     //去掉TableView的线
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-
+    
 }
 
 
@@ -385,7 +385,7 @@
 }
 
 - (void)setHighestScoreNetWork{
-    [NEAFNetworkingHelper GETWithUrl:@"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_currency/tianxiazixun/start_page" params:nil success:^(id response) {
+    [NEAFNetworkingHelper GETWithUrl:@"http://host-119-148-162-231.iphost.gotonets.com:8080/tj_currency/246flash/start_page" params:nil success:^(id response) {
         NSDictionary *responseDic = (NSDictionary *)response;
         int codeState = [[responseDic objectForKey:@"code"] intValue];
         NSDictionary *dic = [responseDic objectForKey:@"retData"];

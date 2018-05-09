@@ -69,6 +69,8 @@
 //发帖
 + (id)POSTUploadUserId:(NSString *)userId title:(NSString *)title text:(NSString *)text pic:(NSString *)pic completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler;
 
+// 发评论
++ (id)POSTCommentUserId:(NSString *)userId  text:(NSString *)text  completionHandler:(void(^)(XTJRegisterItem *allCommunity, NSError *error))completionHandler;
 
 //个人中心
 + (id)POSTPersonalID:(NSString *)userID completionHandler:(void(^)(XTJMineItem *essences, NSError *error))completionHandler;
