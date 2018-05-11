@@ -12,9 +12,9 @@
 #import "ZXListController.h"
 #import "ZXListFlowLayout.h"
 #import "ZXPageController.h"
-#import "XTJMineViewController.h"
+#import "ZXMineViewController.h"
 #import "ZXNavigationViewController.h"
-#import "AskTableViewController.h"
+#import "ZXkTableViewController.h"
 @interface YGTabBarController ()
 
 @end
@@ -56,13 +56,13 @@
     listVC.tabBarItem.selectedImage = @"icon_video_pre".yg_image;
     ZXNavigationViewController *listNavi = [[ZXNavigationViewController alloc] initWithRootViewController:listVC];
     
-    AskTableViewController *askVC = [[AskTableViewController alloc] init];
+    ZXkTableViewController *askVC = [[ZXkTableViewController alloc] init];
     askVC.title = @"论坛";
     askVC.tabBarItem.image = @"icon_cummunity_nor".yg_image;
     askVC.tabBarItem.selectedImage = @"icon_cummunity_pre".yg_image;
     ZXNavigationViewController *askNavi = [[ZXNavigationViewController alloc] initWithRootViewController:askVC];
     
-     XTJMineViewController *mineVC = [[XTJMineViewController alloc] init];
+     ZXMineViewController *mineVC = [[ZXMineViewController alloc] init];
     mineVC.view.backgroundColor = [UIColor whiteColor];
     mineVC.title = @"个人中心";
     mineVC.tabBarItem.image = @"icon_person_nor".yg_image;

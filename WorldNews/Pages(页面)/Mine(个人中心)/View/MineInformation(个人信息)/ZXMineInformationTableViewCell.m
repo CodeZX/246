@@ -6,9 +6,9 @@
 //  Copyright © 2017年 JiFeng. All rights reserved.
 //
 
-#import "XTJMineInformationTableViewCell.h"
+#import "ZXMineInformationTableViewCell.h"
 
-@implementation XTJMineInformationTableViewCell
+@implementation ZXMineInformationTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

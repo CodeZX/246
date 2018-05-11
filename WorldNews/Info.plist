@@ -28,9 +28,9 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>天下资讯会在您使用拍照功能时访问您的相机</string>
+	<string>246简讯会在您使用拍照功能时访问您的相机</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>天下资讯需要您的访问相册权限才能打开您的相册</string>
+	<string>246简讯需要您的访问相册权限才能打开您的相册</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

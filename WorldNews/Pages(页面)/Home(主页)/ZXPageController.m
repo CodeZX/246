@@ -23,17 +23,19 @@ NSString * const Kstring = @"1";
 - (instancetype)init
 {
     if (self = [super init]) {
-        self.menuBGColor = YGRGBColor(60 , 158, 243); 
+//        self.menuBGColor = YGRGBColor(60 , 158, 243);
         
         self.menuViewStyle = WMMenuViewStyleLine;
         self.menuViewLayoutMode = WMMenuViewLayoutModeCenter;
+        self.menuViewStyle = WMMenuViewStyleDefault;
         self.titleSizeNormal = 14;
         self.titleSizeSelected = 16;
+        self.showOnNavigationBar = YES;
         
         self.titleColorSelected = [UIColor whiteColor];
 //        self.automaticallyCalculatesItemWidths = YES; //根据题目的内容自动算宽度
         self.itemMargin = 30; //题目的间距
-        self.menuHeight = 44;
+//        self.menuHeight = 44;
 //        self.showOnNavigationBar = YES;
     }
     return self;
@@ -63,6 +65,18 @@ NSString * const Kstring = @"1";
     ZXCategoryController *cateVC = [[ZXCategoryController alloc] init];
     return cateVC;
 }
+
+- (CGRect)pageController:(WMPageController *)pageController preferredFrameForMenuView:(WMMenuView *)menuView {
+    
+    return CGRectMake(0, 0, YGScreenW, 44);
+}
+
+- (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView {
+    
+
+     return CGRectMake(0, 0, YGScreenW, YGScreenH);
+   
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -85,6 +99,8 @@ NSString * const Kstring = @"1";
         [self.view addSubview:naVC.view];
     }
 }
+
+
 
 
 @end

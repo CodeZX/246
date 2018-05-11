@@ -14,7 +14,7 @@
 
 @end
 
-@interface XTJMineInformationTableViewCell : UITableViewCell
+@interface ZXMineInformationTableViewCell : UITableViewCell
 
 + (UINib *)nib;
 

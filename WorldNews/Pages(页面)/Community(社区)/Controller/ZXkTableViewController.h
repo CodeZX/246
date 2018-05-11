@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AskTableViewController : UIViewController
+@interface ZXkTableViewController : UIViewController
 
 //- (instancetype)initWithstatus:(NSString *)status;
 

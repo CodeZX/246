@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Edgar_Guan. All rights reserved.
 //
 
-#import "AskTableViewController.h"
+#import "ZXkTableViewController.h"
 #import "ASKTableViewCell.h"
 #import "DSCommitViewController.h"
 #import "DSCommentDetailsViewController.h"
@@ -22,7 +22,7 @@ static NSString * pageNum = @"20";
 #define PIC_HEIGHT 80
 #define COL_COUNT 3
 
-@interface AskTableViewController ()<UITableViewDelegate,UITableViewDataSource,ASKTableViewCellDelegate>
+@interface ZXkTableViewController ()<UITableViewDelegate,UITableViewDataSource,ASKTableViewCellDelegate>
 
 @property (nonatomic, strong) NSArray * dataArray;
 @property (nonatomic,strong) UIButton * addButton;
@@ -39,7 +39,7 @@ static NSString * pageNum = @"20";
 @property (nonatomic, assign) BOOL isFirst;
 @end
 
-@implementation AskTableViewController
+@implementation ZXkTableViewController
 
 
 - (void)viewDidLoad {
@@ -131,7 +131,7 @@ static NSString * pageNum = @"20";
     self.tableView.estimatedRowHeight = 180;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self.tableView registerNib:[ASKTableViewCell nib] forCellReuseIdentifier:kCellIdentifier];
-    __weak AskTableViewController * weakSelf = self;
+    __weak ZXkTableViewController * weakSelf = self;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         _isRefreshing = YES;
         

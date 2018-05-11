@@ -6,9 +6,9 @@
 //  Copyright © 2017年 JiFeng. All rights reserved.
 //
 
-#import "XTJMineInformationTableViewCell.h"
+#import "ZXMineInformationTableViewCell.h"
 
-@interface XTJMineInformationTableViewCell (XTJConfigureForMineInformation)
+@interface ZXMineInformationTableViewCell (XTJConfigureForMineInformation)
 - (void)configCellWithModel:(id)model;
 
 @end

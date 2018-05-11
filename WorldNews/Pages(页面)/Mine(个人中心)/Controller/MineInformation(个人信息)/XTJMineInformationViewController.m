@@ -8,7 +8,7 @@
 
 #import "XTJMineInformationViewController.h"
 #import "XTJMineInformationModel.h"
-#import "XTJMineInformationTableViewCell.h"
+#import "ZXMineInformationTableViewCell.h"
 #import "XTJMineInformationTableViewCell+XTJConfigureForMineInformation.h"
 #import "XTJCompileNameViewController.h"
 
@@ -49,7 +49,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XTJMineInformationTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    ZXMineInformationTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.delegate = self;
     XTJMineInformationModel * mine = self.dataArray[indexPath.item];
@@ -236,7 +236,7 @@
         
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        [_tableView registerNib:[XTJMineInformationTableViewCell nib] forCellReuseIdentifier:@"cell"];
+        [_tableView registerNib:[ZXMineInformationTableViewCell nib] forCellReuseIdentifier:@"cell"];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
     }

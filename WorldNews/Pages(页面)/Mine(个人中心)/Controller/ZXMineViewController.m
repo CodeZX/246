@@ -6,7 +6,7 @@
 //  Copyright © 2018年 徐冬苏. All rights reserved.
 //
 
-#import "XTJMineViewController.h"
+#import "ZXMineViewController.h"
 #import "XTJMineHeaderView.h"
 #import "XTJMine.h"
 #import "XTJMineTableViewCell.h"
@@ -17,7 +17,7 @@
 #import "XTJSettingViewController.h"
 #import "XTJLoginViewController.h"
 
-@interface XTJMineViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ZXMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView * tableView;
 @property (nonatomic, strong) XTJMineHeaderView * headerView;
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation XTJMineViewController
+@implementation ZXMineViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

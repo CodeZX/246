@@ -22,7 +22,7 @@
 #import "NEAFNetworkingHelper.h"
 #import "UIImageView+WebCache.h"
 
-NSString * const kJPushAppKey = @"c2fa18fc5422dcbbf673ba2f";
+NSString * const kJPushAppKey = @"eabd2e0c69e71e5fdcb89797";
 #define ScreenBounds [UIScreen mainScreen].bounds
 
 @interface AppDelegate ()<JPUSHRegisterDelegate>

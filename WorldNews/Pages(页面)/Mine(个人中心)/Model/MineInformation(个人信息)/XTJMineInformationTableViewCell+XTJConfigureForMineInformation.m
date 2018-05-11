@@ -9,7 +9,7 @@
 #import "XTJMineInformationTableViewCell+XTJConfigureForMineInformation.h"
 #import "XTJMineInformationModel.h"
 #import "JFSaveTool.h"
-@implementation XTJMineInformationTableViewCell (XTJConfigureForMineInformation)
+@implementation ZXMineInformationTableViewCell (XTJConfigureForMineInformation)
 
 - (void)configCellWithModel:(id)model {
     XTJMineInformationModel * mineSetting = (XTJMineInformationModel *)model;

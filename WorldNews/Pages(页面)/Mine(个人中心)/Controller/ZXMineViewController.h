@@ -8,6 +8,6 @@
 
 #import "XTJBaseViewController.h"
 
-@interface XTJMineViewController : XTJBaseViewController
+@interface ZXMineViewController : XTJBaseViewController
 
 @end

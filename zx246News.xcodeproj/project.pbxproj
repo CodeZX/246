@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1859A58B20A41E9D00FFB7EF /* MallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859A58A20A41E9D00FFB7EF /* MallViewController.m */; };
+		1859A58E20A41EBC00FFB7EF /* MallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859A58D20A41EBC00FFB7EF /* MallTableViewController.m */; };
+		1859A59120A421B700FFB7EF /* MallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859A59020A421B700FFB7EF /* MallModel.m */; };
+		1859A59420A421D100FFB7EF /* MallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1859A59320A421D100FFB7EF /* MallView.m */; };
+		342FAF0689076A9213E53EFA /* libPods-zx246News.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BF84A814DF683C17060133 /* libPods-zx246News.a */; };
 		A4041E7C1E54AC7D00957131 /* ZXPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4041E7B1E54AC7D00957131 /* ZXPageController.m */; };
 		A404468F1E57500D00BDC831 /* ZXAgoEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40446801E57500D00BDC831 /* ZXAgoEssenceController.m */; };
 		A40446901E57500D00BDC831 /* ZXAgoEssenceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A40446831E57500D00BDC831 /* ZXAgoEssenceItem.m */; };
@@ -55,7 +60,7 @@
 		A4C15AE21E60836E00956425 /* ZXEssenceCommomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C15ADB1E60836E00956425 /* ZXEssenceCommomCell.m */; };
 		A4C15AE31E60836E00956425 /* ZXEssenceImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C15ADD1E60836E00956425 /* ZXEssenceImageCell.m */; };
 		BB2C8E99209AA12100712324 /* DSCommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E8F209AA12000712324 /* DSCommitViewController.m */; };
-		BB2C8E9B209AA12100712324 /* AskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E92209AA12000712324 /* AskTableViewController.m */; };
+		BB2C8E9B209AA12100712324 /* ZXkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E92209AA12000712324 /* ZXkTableViewController.m */; };
 		BB2C8E9C209AA12100712324 /* DSCommentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E94209AA12000712324 /* DSCommentDetailsViewController.m */; };
 		BB2C8E9D209AA12100712324 /* DSCommentDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8E95209AA12000712324 /* DSCommentDetailsViewController.xib */; };
 		BB2C8E9E209AA12100712324 /* DSAskAboutMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E96209AA12100712324 /* DSAskAboutMineViewController.m */; };
@@ -66,7 +71,7 @@
 		BB2C8EB1209AAEBE00712324 /* ASKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EAD209AAEBE00712324 /* ASKTableViewCell.m */; };
 		BB2C8EB2209AAEBE00712324 /* ASKTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8EAE209AAEBE00712324 /* ASKTableViewCell.xib */; };
 		BB2C8EB5209AAFFC00712324 /* UIButton+DSAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EB3209AAFFC00712324 /* UIButton+DSAdd.m */; };
-		BB2C8EBB209AB25D00712324 /* XTJMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EBA209AB25D00712324 /* XTJMineViewController.m */; };
+		BB2C8EBB209AB25D00712324 /* ZXMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EBA209AB25D00712324 /* ZXMineViewController.m */; };
 		BB2C8EC0209AB26400712324 /* XTJMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EBD209AB26400712324 /* XTJMineHeaderView.m */; };
 		BB2C8EC1209AB26400712324 /* XTJMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EBE209AB26400712324 /* XTJMineTableViewCell.m */; };
 		BB2C8EC4209AB28D00712324 /* XTJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EC3209AB28D00712324 /* XTJBaseViewController.m */; };
@@ -86,7 +91,7 @@
 		BB2C8F19209AEF5500712324 /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F17209AEF5500712324 /* NSString+Verify.m */; };
 		BB2C8F21209AF23000712324 /* XTJCompileNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F1B209AF23000712324 /* XTJCompileNameTableViewCell.m */; };
 		BB2C8F22209AF23000712324 /* XTJCompileNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8F1C209AF23000712324 /* XTJCompileNameTableViewCell.xib */; };
-		BB2C8F23209AF23000712324 /* XTJMineInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F1E209AF23000712324 /* XTJMineInformationTableViewCell.m */; };
+		BB2C8F23209AF23000712324 /* ZXMineInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F1E209AF23000712324 /* ZXMineInformationTableViewCell.m */; };
 		BB2C8F24209AF23000712324 /* XTJMineInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8F20209AF23000712324 /* XTJMineInformationTableViewCell.xib */; };
 		BB2C8F2B209AF35600712324 /* XTJMineInformationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F28209AF35600712324 /* XTJMineInformationModel.m */; };
 		BB2C8F2C209AF35600712324 /* XTJMineInformationTableViewCell+XTJConfigureForMineInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F29209AF35600712324 /* XTJMineInformationTableViewCell+XTJConfigureForMineInformation.m */; };
@@ -111,11 +116,21 @@
 		BB2F77EB209329AB00044DD1 /* JFSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2F77EA209329AB00044DD1 /* JFSaveTool.m */; };
 		BB515E042093111800B59189 /* ZXNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB515E032093111800B59189 /* ZXNavigationViewController.m */; };
 		BB515E072093112E00B59189 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BB515E052093112D00B59189 /* UIImage+Extension.m */; };
-		E6BC192EB027FE46369F7167 /* libPods-WorldNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E2FB1C6EEB3F35D204114E /* libPods-WorldNews.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1859A58420A3FBEB00FFB7EF /* zx246News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = zx246News.entitlements; sourceTree = "<group>"; };
+		1859A58920A41E9D00FFB7EF /* MallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallViewController.h; sourceTree = "<group>"; };
+		1859A58A20A41E9D00FFB7EF /* MallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallViewController.m; sourceTree = "<group>"; };
+		1859A58C20A41EBC00FFB7EF /* MallTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallTableViewController.h; sourceTree = "<group>"; };
+		1859A58D20A41EBC00FFB7EF /* MallTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallTableViewController.m; sourceTree = "<group>"; };
+		1859A58F20A421B700FFB7EF /* MallModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallModel.h; sourceTree = "<group>"; };
+		1859A59020A421B700FFB7EF /* MallModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallModel.m; sourceTree = "<group>"; };
+		1859A59220A421D100FFB7EF /* MallView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MallView.h; sourceTree = "<group>"; };
+		1859A59320A421D100FFB7EF /* MallView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallView.m; sourceTree = "<group>"; };
 		42C24E56103CF694C77BD1A6 /* Pods-WorldNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldNews/Pods-WorldNews.release.xcconfig"; sourceTree = "<group>"; };
+		930A3FECF8738BC79DE40522 /* Pods-zx246News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zx246News.release.xcconfig"; path = "Pods/Target Support Files/Pods-zx246News/Pods-zx246News.release.xcconfig"; sourceTree = "<group>"; };
+		A0BF84A814DF683C17060133 /* libPods-zx246News.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zx246News.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4041E7A1E54AC7D00957131 /* ZXPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPageController.h; sourceTree = "<group>"; };
 		A4041E7B1E54AC7D00957131 /* ZXPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPageController.m; sourceTree = "<group>"; };
 		A404467F1E57500D00BDC831 /* ZXAgoEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXAgoEssenceController.h; sourceTree = "<group>"; };
@@ -181,7 +196,7 @@
 		A418B2411E4A27E30056F14B /* YGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGTabBarController.m; sourceTree = "<group>"; };
 		A418B2521E4A28C30056F14B /* ZXListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXListController.h; sourceTree = "<group>"; };
 		A418B2531E4A28C30056F14B /* ZXListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXListController.m; sourceTree = "<group>"; };
-		A46E4FA21E49E72E000756D9 /* WorldNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46E4FA21E49E72E000756D9 /* zx246News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zx246News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46E4FA61E49E72E000756D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A46E4FA81E49E72E000756D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A46E4FA91E49E72E000756D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -210,10 +225,11 @@
 		A4C15ADB1E60836E00956425 /* ZXEssenceCommomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXEssenceCommomCell.m; sourceTree = "<group>"; };
 		A4C15ADC1E60836E00956425 /* ZXEssenceImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXEssenceImageCell.h; sourceTree = "<group>"; };
 		A4C15ADD1E60836E00956425 /* ZXEssenceImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXEssenceImageCell.m; sourceTree = "<group>"; };
-		BB2C8E8E209AA12000712324 /* AskTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskTableViewController.h; sourceTree = "<group>"; };
+		B6219DF0A20F859E8B62D16F /* Pods-zx246News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zx246News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zx246News/Pods-zx246News.debug.xcconfig"; sourceTree = "<group>"; };
+		BB2C8E8E209AA12000712324 /* ZXkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXkTableViewController.h; sourceTree = "<group>"; };
 		BB2C8E8F209AA12000712324 /* DSCommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCommitViewController.m; sourceTree = "<group>"; };
 		BB2C8E91209AA12000712324 /* DSCommentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCommentDetailsViewController.h; sourceTree = "<group>"; };
-		BB2C8E92209AA12000712324 /* AskTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskTableViewController.m; sourceTree = "<group>"; };
+		BB2C8E92209AA12000712324 /* ZXkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXkTableViewController.m; sourceTree = "<group>"; };
 		BB2C8E93209AA12000712324 /* DSCommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCommitViewController.h; sourceTree = "<group>"; };
 		BB2C8E94209AA12000712324 /* DSCommentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCommentDetailsViewController.m; sourceTree = "<group>"; };
 		BB2C8E95209AA12000712324 /* DSCommentDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSCommentDetailsViewController.xib; sourceTree = "<group>"; };
@@ -230,8 +246,8 @@
 		BB2C8EAE209AAEBE00712324 /* ASKTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASKTableViewCell.xib; sourceTree = "<group>"; };
 		BB2C8EB3209AAFFC00712324 /* UIButton+DSAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSAdd.m"; sourceTree = "<group>"; };
 		BB2C8EB4209AAFFC00712324 /* UIButton+DSAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSAdd.h"; sourceTree = "<group>"; };
-		BB2C8EB9209AB25D00712324 /* XTJMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJMineViewController.h; sourceTree = "<group>"; };
-		BB2C8EBA209AB25D00712324 /* XTJMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJMineViewController.m; sourceTree = "<group>"; };
+		BB2C8EB9209AB25D00712324 /* ZXMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMineViewController.h; sourceTree = "<group>"; };
+		BB2C8EBA209AB25D00712324 /* ZXMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMineViewController.m; sourceTree = "<group>"; };
 		BB2C8EBC209AB26400712324 /* XTJMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJMineHeaderView.h; sourceTree = "<group>"; };
 		BB2C8EBD209AB26400712324 /* XTJMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJMineHeaderView.m; sourceTree = "<group>"; };
 		BB2C8EBE209AB26400712324 /* XTJMineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJMineTableViewCell.m; sourceTree = "<group>"; };
@@ -267,8 +283,8 @@
 		BB2C8F18209AEF5500712324 /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
 		BB2C8F1B209AF23000712324 /* XTJCompileNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJCompileNameTableViewCell.m; sourceTree = "<group>"; };
 		BB2C8F1C209AF23000712324 /* XTJCompileNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTJCompileNameTableViewCell.xib; sourceTree = "<group>"; };
-		BB2C8F1D209AF23000712324 /* XTJMineInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJMineInformationTableViewCell.h; sourceTree = "<group>"; };
-		BB2C8F1E209AF23000712324 /* XTJMineInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJMineInformationTableViewCell.m; sourceTree = "<group>"; };
+		BB2C8F1D209AF23000712324 /* ZXMineInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMineInformationTableViewCell.h; sourceTree = "<group>"; };
+		BB2C8F1E209AF23000712324 /* ZXMineInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMineInformationTableViewCell.m; sourceTree = "<group>"; };
 		BB2C8F1F209AF23000712324 /* XTJCompileNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJCompileNameTableViewCell.h; sourceTree = "<group>"; };
 		BB2C8F20209AF23000712324 /* XTJMineInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTJMineInformationTableViewCell.xib; sourceTree = "<group>"; };
 		BB2C8F26209AF35600712324 /* XTJMineInformationTableViewCell+XTJConfigureForMineInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XTJMineInformationTableViewCell+XTJConfigureForMineInformation.h"; sourceTree = "<group>"; };
@@ -314,7 +330,6 @@
 		BB515E052093112D00B59189 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		BB515E062093112D00B59189 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		EBBA003AD3852BDEB95D84C9 /* Pods-WorldNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldNews/Pods-WorldNews.debug.xcconfig"; sourceTree = "<group>"; };
-		F5E2FB1C6EEB3F35D204114E /* libPods-WorldNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorldNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,18 +338,59 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2C8EA4209AADD000712324 /* AliyunOSSiOS.framework in Frameworks */,
-				E6BC192EB027FE46369F7167 /* libPods-WorldNews.a in Frameworks */,
+				342FAF0689076A9213E53EFA /* libPods-zx246News.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1859A58520A41E8400FFB7EF /* Mall */ = {
+			isa = PBXGroup;
+			children = (
+				1859A58620A41E8400FFB7EF /* Controller */,
+				1859A58720A41E8400FFB7EF /* Model */,
+				1859A58820A41E8400FFB7EF /* view */,
+			);
+			path = Mall;
+			sourceTree = "<group>";
+		};
+		1859A58620A41E8400FFB7EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1859A58920A41E9D00FFB7EF /* MallViewController.h */,
+				1859A58A20A41E9D00FFB7EF /* MallViewController.m */,
+				1859A58C20A41EBC00FFB7EF /* MallTableViewController.h */,
+				1859A58D20A41EBC00FFB7EF /* MallTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1859A58720A41E8400FFB7EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1859A58F20A421B700FFB7EF /* MallModel.h */,
+				1859A59020A421B700FFB7EF /* MallModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1859A58820A41E8400FFB7EF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1859A59220A421D100FFB7EF /* MallView.h */,
+				1859A59320A421D100FFB7EF /* MallView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		5BCB9AC4E68E11136A732A2D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				EBBA003AD3852BDEB95D84C9 /* Pods-WorldNews.debug.xcconfig */,
 				42C24E56103CF694C77BD1A6 /* Pods-WorldNews.release.xcconfig */,
+				B6219DF0A20F859E8B62D16F /* Pods-zx246News.debug.xcconfig */,
+				930A3FECF8738BC79DE40522 /* Pods-zx246News.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -342,7 +398,7 @@
 		9891628CED7438B56C16D29C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5E2FB1C6EEB3F35D204114E /* libPods-WorldNews.a */,
+				A0BF84A814DF683C17060133 /* libPods-zx246News.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -631,6 +687,7 @@
 		A46E4F991E49E72E000756D9 = {
 			isa = PBXGroup;
 			children = (
+				1859A58420A3FBEB00FFB7EF /* zx246News.entitlements */,
 				A46E4FA41E49E72E000756D9 /* WorldNews */,
 				A46E4FA31E49E72E000756D9 /* Products */,
 				5BCB9AC4E68E11136A732A2D /* Pods */,
@@ -641,7 +698,7 @@
 		A46E4FA31E49E72E000756D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A46E4FA21E49E72E000756D9 /* WorldNews.app */,
+				A46E4FA21E49E72E000756D9 /* zx246News.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -722,6 +779,7 @@
 			children = (
 				BB2C8F0D209AEE5200712324 /* Login */,
 				A46E4FC21E49E9F7000756D9 /* Other */,
+				1859A58520A41E8400FFB7EF /* Mall */,
 				A46E4FC71E49EA7C000756D9 /* Home(主页) */,
 				A46E4FCB1E49EA7C000756D9 /* List(专栏) */,
 				BB2C8E87209A9B5400712324 /* Community(社区) */,
@@ -910,8 +968,8 @@
 		BB2C8E8B209AA10600712324 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BB2C8E8E209AA12000712324 /* AskTableViewController.h */,
-				BB2C8E92209AA12000712324 /* AskTableViewController.m */,
+				BB2C8E8E209AA12000712324 /* ZXkTableViewController.h */,
+				BB2C8E92209AA12000712324 /* ZXkTableViewController.m */,
 				BB2C8E93209AA12000712324 /* DSCommitViewController.h */,
 				BB2C8E8F209AA12000712324 /* DSCommitViewController.m */,
 				BB2C8E91209AA12000712324 /* DSCommentDetailsViewController.h */,
@@ -971,8 +1029,8 @@
 		BB2C8EB8209AB24A00712324 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BB2C8EB9209AB25D00712324 /* XTJMineViewController.h */,
-				BB2C8EBA209AB25D00712324 /* XTJMineViewController.m */,
+				BB2C8EB9209AB25D00712324 /* ZXMineViewController.h */,
+				BB2C8EBA209AB25D00712324 /* ZXMineViewController.m */,
 				BB2C8ED0209ABCE600712324 /* MineInformation(个人信息) */,
 				BB2C8ECF209ABCE300712324 /* MinePost(我的话题) */,
 				BB2C8ECE209ABCE000712324 /* feedback(反馈) */,
@@ -1047,8 +1105,8 @@
 		BB2C8F1A209AF21900712324 /* MineInformation(个人信息) */ = {
 			isa = PBXGroup;
 			children = (
-				BB2C8F1D209AF23000712324 /* XTJMineInformationTableViewCell.h */,
-				BB2C8F1E209AF23000712324 /* XTJMineInformationTableViewCell.m */,
+				BB2C8F1D209AF23000712324 /* ZXMineInformationTableViewCell.h */,
+				BB2C8F1E209AF23000712324 /* ZXMineInformationTableViewCell.m */,
 				BB2C8F20209AF23000712324 /* XTJMineInformationTableViewCell.xib */,
 				BB2C8F1F209AF23000712324 /* XTJCompileNameTableViewCell.h */,
 				BB2C8F1B209AF23000712324 /* XTJCompileNameTableViewCell.m */,
@@ -1119,24 +1177,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A46E4FA11E49E72E000756D9 /* WorldNews */ = {
+		A46E4FA11E49E72E000756D9 /* zx246News */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A46E4FB91E49E72E000756D9 /* Build configuration list for PBXNativeTarget "WorldNews" */;
+			buildConfigurationList = A46E4FB91E49E72E000756D9 /* Build configuration list for PBXNativeTarget "zx246News" */;
 			buildPhases = (
 				7663BF42C98DFCD86AFA491E /* [CP] Check Pods Manifest.lock */,
 				A46E4F9E1E49E72E000756D9 /* Sources */,
 				A46E4F9F1E49E72E000756D9 /* Frameworks */,
 				A46E4FA01E49E72E000756D9 /* Resources */,
-				600BC21FBC5B44620F89279A /* [CP] Embed Pods Frameworks */,
-				49FDDB0BA9D37F8D1C50E14F /* [CP] Copy Pods Resources */,
+				CE694851D9EABDB1744B9D9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WorldNews;
+			name = zx246News;
 			productName = WangYe;
-			productReference = A46E4FA21E49E72E000756D9 /* WorldNews.app */;
+			productReference = A46E4FA21E49E72E000756D9 /* zx246News.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1151,7 +1208,7 @@
 				TargetAttributes = {
 					A46E4FA11E49E72E000756D9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 69DWRY94AQ;
+						DevelopmentTeam = 4N4R9WDW37;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1164,7 +1221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A46E4F9D1E49E72E000756D9 /* Build configuration list for PBXProject "WorldNews" */;
+			buildConfigurationList = A46E4F9D1E49E72E000756D9 /* Build configuration list for PBXProject "zx246News" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1177,7 +1234,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A46E4FA11E49E72E000756D9 /* WorldNews */,
+				A46E4FA11E49E72E000756D9 /* zx246News */,
 			);
 		};
 /* End PBXProject section */
@@ -1207,13 +1264,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		49FDDB0BA9D37F8D1C50E14F /* [CP] Copy Pods Resources */ = {
+		7663BF42C98DFCD86AFA491E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WorldNews/Pods-WorldNews-resources.sh",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zx246News-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE694851D9EABDB1744B9D9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-zx246News/Pods-zx246News-resources.sh",
 				"${PODS_ROOT}/HcdCachePlayer/hcdCachePlayer/hcdCachePlayer.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
@@ -1228,40 +1303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldNews/Pods-WorldNews-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		600BC21FBC5B44620F89279A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldNews/Pods-WorldNews-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7663BF42C98DFCD86AFA491E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WorldNews-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zx246News/Pods-zx246News-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1285,21 +1327,23 @@
 				A40EFAC61E5C6D1F0091A3DB /* ZXListFlowLayout.m in Sources */,
 				BB2C8F2C209AF35600712324 /* XTJMineInformationTableViewCell+XTJConfigureForMineInformation.m in Sources */,
 				BB2C8EF9209ADFB200712324 /* UIBarButtonItem+JFItem.m in Sources */,
-				BB2C8EBB209AB25D00712324 /* XTJMineViewController.m in Sources */,
+				BB2C8EBB209AB25D00712324 /* ZXMineViewController.m in Sources */,
 				A40446911E57500D00BDC831 /* ZXAgoCell.m in Sources */,
 				A418B2331E4A1B330056F14B /* UIView+HUD.m in Sources */,
 				BB2F77EB209329AB00044DD1 /* JFSaveTool.m in Sources */,
 				A4BA2A641E5A08DD00AA7DF3 /* ZXAllDetailTextCell.m in Sources */,
 				BB2C8F39209B17D900712324 /* ASKTableViewCell+CommunityItem.m in Sources */,
-				BB2C8F23209AF23000712324 /* XTJMineInformationTableViewCell.m in Sources */,
+				BB2C8F23209AF23000712324 /* ZXMineInformationTableViewCell.m in Sources */,
 				BB2C8F19209AEF5500712324 /* NSString+Verify.m in Sources */,
 				BB515E072093112E00B59189 /* UIImage+Extension.m in Sources */,
 				BB2C8F33209B073A00712324 /* XTJCompileNameViewController.m in Sources */,
+				1859A58B20A41E9D00FFB7EF /* MallViewController.m in Sources */,
 				BB2C8F40209BF7F100712324 /* XTJLoginItem.m in Sources */,
 				BB2C8F05209AE29200712324 /* XTJSettingViewController.m in Sources */,
 				A415C4A71E59BFDE00729F82 /* ZXAllCategoryController.m in Sources */,
 				A4C15AE31E60836E00956425 /* ZXEssenceImageCell.m in Sources */,
 				BB2C8F2B209AF35600712324 /* XTJMineInformationModel.m in Sources */,
+				1859A58E20A41EBC00FFB7EF /* MallTableViewController.m in Sources */,
 				BB2C8F54209C625000712324 /* ATJURLFailture.m in Sources */,
 				BB2C8EA8209AADFB00712324 /* OSSImageUploader.m in Sources */,
 				BB2C8ECC209AB69A00712324 /* XTJMineTableViewCell+XTJMine.m in Sources */,
@@ -1310,6 +1354,7 @@
 				A4C15ADE1E60836E00956425 /* ZXEssenceController.m in Sources */,
 				A4109E251E520B460075208C /* ZXListDetailController.m in Sources */,
 				A415C4AA1E59C02000729F82 /* ZXAllCategoryItem.m in Sources */,
+				1859A59120A421B700FFB7EF /* MallModel.m in Sources */,
 				A40446921E57500D00BDC831 /* ZXAgoFlowLayout.m in Sources */,
 				A418B2391E4A1EB80056F14B /* NSString+YG.m in Sources */,
 				A4109E311E520C5F0075208C /* ZXListCell.m in Sources */,
@@ -1317,6 +1362,7 @@
 				BB2C8E9C209AA12100712324 /* DSCommentDetailsViewController.m in Sources */,
 				BB2F77E7209328C300044DD1 /* NEAFNetworkingHelper.m in Sources */,
 				A418B2301E4A1A6B0056F14B /* NSObject+Parse.m in Sources */,
+				1859A59420A421D100FFB7EF /* MallView.m in Sources */,
 				BB2C8F52209C625000712324 /* UIImage+Extension.m in Sources */,
 				BB2C8EB5209AAFFC00712324 /* UIButton+DSAdd.m in Sources */,
 				A40446901E57500D00BDC831 /* ZXAgoEssenceItem.m in Sources */,
@@ -1324,7 +1370,7 @@
 				A40FD8301E53232F001BA42C /* ZXListDetailMovieController.m in Sources */,
 				BB2C8F14209AEE7200712324 /* XTJFindPassWordViewController.m in Sources */,
 				A40446B01E576DFD00BDC831 /* ZXTopicFlowlayout.m in Sources */,
-				BB2C8E9B209AA12100712324 /* AskTableViewController.m in Sources */,
+				BB2C8E9B209AA12100712324 /* ZXkTableViewController.m in Sources */,
 				BB2C8EB1209AAEBE00712324 /* ASKTableViewCell.m in Sources */,
 				A4BA2A6A1E5A0E1700AA7DF3 /* ZXAllDetailPicCell.m in Sources */,
 				BB2C8F16209AEE7200712324 /* XTJRegisterViewController.m in Sources */,
@@ -1477,24 +1523,24 @@
 		};
 		A46E4FBA1E49E72E000756D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBBA003AD3852BDEB95D84C9 /* Pods-WorldNews.debug.xcconfig */;
+			baseConfigurationReference = B6219DF0A20F859E8B62D16F /* Pods-zx246News.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = WorldNews/WorldNews.entitlements;
+				CODE_SIGN_ENTITLEMENTS = zx246News.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69DWRY94AQ;
+				DEVELOPMENT_TEAM = 4N4R9WDW37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WorldNews/Vendor/AliyunOSS",
 				);
-				GCC_PREFIX_HEADER = $PRODUCT_NAME/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WorldNews/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/WorldNews/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.xusutunj.246;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xusutunj.246jianxun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1503,24 +1549,24 @@
 		};
 		A46E4FBB1E49E72E000756D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42C24E56103CF694C77BD1A6 /* Pods-WorldNews.release.xcconfig */;
+			baseConfigurationReference = 930A3FECF8738BC79DE40522 /* Pods-zx246News.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = WorldNews/WorldNews.entitlements;
+				CODE_SIGN_ENTITLEMENTS = zx246News.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69DWRY94AQ;
+				DEVELOPMENT_TEAM = 4N4R9WDW37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WorldNews/Vendor/AliyunOSS",
 				);
-				GCC_PREFIX_HEADER = $PRODUCT_NAME/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WorldNews/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/WorldNews/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.xusutunj.246;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xusutunj.246jianxun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1530,7 +1576,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A46E4F9D1E49E72E000756D9 /* Build configuration list for PBXProject "WorldNews" */ = {
+		A46E4F9D1E49E72E000756D9 /* Build configuration list for PBXProject "zx246News" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A46E4FB71E49E72E000756D9 /* Debug */,
@@ -1539,7 +1585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A46E4FB91E49E72E000756D9 /* Build configuration list for PBXNativeTarget "WorldNews" */ = {
+		A46E4FB91E49E72E000756D9 /* Build configuration list for PBXNativeTarget "zx246News" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A46E4FBA1E49E72E000756D9 /* Debug */,
