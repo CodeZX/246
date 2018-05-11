@@ -1,5 +1,5 @@
 //
-//  XTJRegisterViewController.h
+//  ZXRegisterViewController.h
 //  TJShop
 //
 //  Created by apple on 2018/3/5.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XTJRegisterViewController : UIViewController
+@interface ZXRegisterViewController : UIViewController
 
 @end

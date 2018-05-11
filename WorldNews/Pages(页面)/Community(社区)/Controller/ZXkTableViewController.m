@@ -8,11 +8,11 @@
 
 #import "ZXkTableViewController.h"
 #import "ASKTableViewCell.h"
-#import "DSCommitViewController.h"
+#import "ZXCommitViewController.h"
 #import "DSCommentDetailsViewController.h"
 #import "ASKTableViewCell+CommunityItem.h"
 #import "XTJCommunity.h"
-#import "XTJLoginViewController.h"
+#import "ZXLoginViewController.h"
 //#import "DSAvatarBrowser.h"
 static NSString * const kCellIdentifier = @"ASKCell.identifier";
 static NSString * pageNum = @"20";
@@ -89,7 +89,7 @@ static NSString * pageNum = @"20";
     XTJCommunity_retData * item = self.dataArray[button.tag];
     
     if ([[JFSaveTool objectForKey:@"UserID"] isEqualToString:@""] || [JFSaveTool objectForKey:@"UserID"] == NULL) {
-        XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+        ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else {
         if (button.selected == NO) {
@@ -112,7 +112,7 @@ static NSString * pageNum = @"20";
     
     XTJCommunity_retData * item = self.dataArray[button.tag];
     if ([[JFSaveTool objectForKey:@"UserID"] isEqualToString:@""] || [JFSaveTool objectForKey:@"UserID"] == NULL) {
-        XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+        ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else {
         [NetManager POSTReportCardId:item.card_id userID:[JFSaveTool objectForKey:@"UserID"] completionHandler:^(XTJRegisterItem *allCommunity, NSError *error) {
@@ -164,10 +164,10 @@ static NSString * pageNum = @"20";
 - (void)tiwenButtonAction:(UIButton *)button {
 
     if ([[JFSaveTool objectForKey:@"UserID"] isEqualToString:@""] || [JFSaveTool objectForKey:@"UserID"] == NULL) {
-        XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+        ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else {
-        DSCommitViewController * vc = [[DSCommitViewController alloc] init];
+        ZXCommitViewController * vc = [[ZXCommitViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         vc.title = @"提问";
         kPushViewController(vc);

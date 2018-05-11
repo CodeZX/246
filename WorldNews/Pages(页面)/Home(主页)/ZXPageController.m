@@ -12,6 +12,8 @@
 #import "ZXEssenceController.h"
 #import "XTJWebNavigationViewController.h"
 #import "JFSaveTool.h"
+
+#import "MallViewController.h"
 NSString * const Kstring = @"1";
 @interface ZXPageController ()
 
@@ -80,7 +82,9 @@ NSString * const Kstring = @"1";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [self setRooVC];
+    [self setRooVC];
+    MallViewController *mallVC = [[MallViewController alloc]init];
+    [self addChildViewController:mallVC];
     
 
 }

@@ -22,7 +22,7 @@
         }];
         
         UIImageView *playIcon = [[UIImageView alloc] init];
-        playIcon.image = [UIImage imageNamed:@"play_button"];
+        playIcon.image = [UIImage imageNamed:@"ZXplay_button"];
         [_iconIV addSubview:playIcon];
         [playIcon mas_makeConstraints:^(MASConstraintMaker *make) {
             make.center.offset(0);

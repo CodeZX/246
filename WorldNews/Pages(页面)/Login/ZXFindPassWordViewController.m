@@ -1,16 +1,16 @@
 //
-//  XTJFindPassWordViewController.m
+//  ZXFindPassWordViewController.m
 //  TJShop
 //
 //  Created by apple on 2018/3/5.
 //  Copyright © 2018年 徐冬苏. All rights reserved.
 //  找回密码
 
-#import "XTJFindPassWordViewController.h"
+#import "ZXFindPassWordViewController.h"
 #import "NSString+Verify.h"
 #define KBlueColor RGB(0,165,234) //蓝色
 
-@interface XTJFindPassWordViewController ()<UITextFieldDelegate>
+@interface ZXFindPassWordViewController ()<UITextFieldDelegate>
 {
     int randNumber;
 }
@@ -27,7 +27,7 @@
 @property (strong, nonatomic) UIButton * sendCodeBtn; ///<获取验证码
 @end
 
-@implementation XTJFindPassWordViewController
+@implementation ZXFindPassWordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

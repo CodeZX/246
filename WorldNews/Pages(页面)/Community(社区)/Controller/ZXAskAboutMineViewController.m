@@ -1,12 +1,12 @@
 //
-//  DSAskAboutMineViewController.m
+//  ZXAskAboutMineViewController.m
 //  FiftyOneCraftsman
 //
 //  Created by apple on 2018/2/3.
 //  Copyright © 2018年 Edgar_Guan. All rights reserved.
 //
 
-#import "DSAskAboutMineViewController.h"
+#import "ZXAskAboutMineViewController.h"
 #import "ASKTableViewCell.h"
 
 static NSString * const kCellIdentifier = @"ASKCell.identifier";
@@ -16,7 +16,7 @@ static NSString * pageNum = @"20";
 #define PIC_WIDTH 70
 #define PIC_HEIGHT 80
 #define COL_COUNT 3
-@interface DSAskAboutMineViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ZXAskAboutMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView * tableView;
 @property (nonatomic, strong) NSMutableArray * dataArrays;  ///< 数据源数组
 @property (nonatomic, assign) BOOL isRefreshing;
@@ -24,7 +24,7 @@ static NSString * pageNum = @"20";
 
 @end
 
-@implementation DSAskAboutMineViewController
+@implementation ZXAskAboutMineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -108,7 +108,7 @@ static NSString * pageNum = @"20";
     
     
     [self.tableView registerNib:[ASKTableViewCell nib] forCellReuseIdentifier:kCellIdentifier];
-    __weak DSAskAboutMineViewController * weakSelf = self;
+    __weak ZXAskAboutMineViewController * weakSelf = self;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         _isRefreshing = YES;
         

@@ -1,5 +1,5 @@
 //
-//  XTJMinePostViewController.h
+//  ZXMinePostViewController.h
 //  WorldNews
 //
 //  Created by tunjin on 2018/5/3.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XTJMinePostViewController : UIViewController
+@interface ZXMinePostViewController : UIViewController
 
 @end

@@ -1,5 +1,5 @@
 //
-//  XTJFindPassWordViewController.h
+//  ZXFindPassWordViewController.h
 //  TJShop
 //
 //  Created by apple on 2018/3/5.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XTJFindPassWordViewController : UIViewController
+@interface ZXFindPassWordViewController : UIViewController
 
 @end

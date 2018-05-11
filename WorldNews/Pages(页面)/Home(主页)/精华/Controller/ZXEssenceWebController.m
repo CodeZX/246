@@ -88,7 +88,7 @@
 - (void)creatSuspendButton
 {
     self.suspendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.suspendBtn setBackgroundImage:[UIImage imageNamed:@"homeBackButton"] forState:UIControlStateNormal];
+    [self.suspendBtn setBackgroundImage:[UIImage imageNamed:@"ZXhomeBackButton"] forState:UIControlStateNormal];
     self.suspendBtn.frame = CGRectMake(0, 0, 54, 54);
     [self.suspendBtn addTarget:self action:@selector(clickSuspendButton) forControlEvents:UIControlEventTouchUpInside];
     //创建悬浮按钮的window

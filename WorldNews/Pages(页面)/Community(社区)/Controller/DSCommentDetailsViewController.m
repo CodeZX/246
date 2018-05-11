@@ -8,9 +8,9 @@
 
 #import "DSCommentDetailsViewController.h"
 #import "ASKTableViewCell.h"
-#import "DSCommitViewController.h"
+#import "ZXCommitViewController.h"
 #import "UIButton+DSAdd.h"
-#import "XTJLoginViewController.h"
+#import "ZXLoginViewController.h"
 //#import "DSAvatarBrowser.h"
 
 static NSString * pageNum = @"20";
@@ -161,10 +161,10 @@ static NSString * const kCellIdentifier = @"ASKCell.identifier";
 - (IBAction)commentButtonAction:(UIButton *)sender {
     
     if ([[JFSaveTool objectForKey:@"UserID"] isEqualToString:@""] || [JFSaveTool objectForKey:@"UserID"] == NULL) {
-        XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+        ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else {
-        DSCommitViewController * vc = [[DSCommitViewController alloc] init];
+        ZXCommitViewController * vc = [[ZXCommitViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         vc.title = @"评论";
         vc.card_id = self.card_id;
@@ -175,7 +175,7 @@ static NSString * const kCellIdentifier = @"ASKCell.identifier";
 - (IBAction)likeButtonAction:(UIButton *)sender {
     
     if ([[JFSaveTool objectForKey:@"UserID"] isEqualToString:@""] || [JFSaveTool objectForKey:@"UserID"] == NULL) {
-        XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+        ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else {
         if (sender.selected == NO) {

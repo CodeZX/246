@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface MallViewController : UIViewController
-@property (nonatomic,weak) UIView *v1;
-@property (nonatomic,weak) UIView *v2;
-@property (nonatomic,weak) UIView *v3;
-@property (nonatomic,weak) UIView *v4;
-@property (nonatomic,weak) UIView *v5;
-@property (nonatomic,weak) UIView *v6;
+@property (nonatomic,strong) UIView *v1;
+@property (nonatomic,strong) UIView *v2;
+@property (nonatomic,strong) UIView *v3;
+@property (nonatomic,strong) UIView *v4;
+@property (nonatomic,strong) UIView *v5;
+@property (nonatomic,strong) UIView *v6;
 @property (nonatomic,weak) UIView *v7;
 @property (nonatomic,weak) UIView *v8;
 @property (nonatomic,weak) UIView *v9;

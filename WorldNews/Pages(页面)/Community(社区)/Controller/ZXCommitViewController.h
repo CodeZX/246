@@ -1,5 +1,5 @@
 //
-//  DSCommitViewController.h
+//  ZXCommitViewController.h
 //  FiftyOneCraftsman
 //
 //  Created by apple on 2018/1/31.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DSCommitViewController : UIViewController
+@interface ZXCommitViewController : UIViewController
 
 @property (nonatomic, strong) NSString * card_id;
 

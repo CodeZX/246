@@ -1,18 +1,18 @@
 //
-//  XTJMinePostViewController.m
+//  ZXMinePostViewController.m
 //  WorldNews
 //
 //  Created by tunjin on 2018/5/3.
 //  Copyright © 2018年 XTJ. All rights reserved.
 //
 
-#import "XTJMinePostViewController.h"
+#import "ZXMinePostViewController.h"
 #import "ASKTableViewCell.h"
-#import "DSCommitViewController.h"
+#import "ZXCommitViewController.h"
 #import "DSCommentDetailsViewController.h"
 #import "ASKTableViewCell+CommunityItem.h"
 #import "XTJCommunity.h"
-#import "XTJLoginViewController.h"
+#import "ZXLoginViewController.h"
 //#import "DSAvatarBrowser.h"
 static NSString * const kCellIdentifier = @"ASKCell.identifier";
 static NSString * pageNum = @"20";
@@ -21,7 +21,7 @@ static NSString * pageNum = @"20";
 #define PIC_WIDTH 70
 #define PIC_HEIGHT 80
 #define COL_COUNT 3
-@interface XTJMinePostViewController ()<UITableViewDelegate,UITableViewDataSource,ASKTableViewCellDelegate>
+@interface ZXMinePostViewController ()<UITableViewDelegate,UITableViewDataSource,ASKTableViewCellDelegate>
 
 @property (nonatomic, strong) NSArray * dataArray;
 @property (nonatomic,strong) UIButton * addButton;
@@ -39,7 +39,7 @@ static NSString * pageNum = @"20";
 
 @end
 
-@implementation XTJMinePostViewController
+@implementation ZXMinePostViewController
 
 
 - (void)viewDidLoad {
@@ -88,7 +88,7 @@ static NSString * pageNum = @"20";
     XTJCommunity_retData * item = self.dataArray[button.tag];
     
     if ([[JFSaveTool objectForKey:@"UserID"] isEqualToString:@""] || [JFSaveTool objectForKey:@"UserID"] == NULL) {
-        XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+        ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else {
         if (button.selected == NO) {
@@ -110,7 +110,7 @@ static NSString * pageNum = @"20";
     
     XTJCommunity_retData * item = self.dataArray[button.tag];
     if ([[JFSaveTool objectForKey:@"UserID"] isEqualToString:@""] || [JFSaveTool objectForKey:@"UserID"] == NULL) {
-        XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+        ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else {
         [NetManager POSTReportCardId:item.card_id userID:[JFSaveTool objectForKey:@"UserID"] completionHandler:^(XTJRegisterItem *allCommunity, NSError *error) {
@@ -130,7 +130,7 @@ static NSString * pageNum = @"20";
     self.tableView.estimatedRowHeight = 180;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self.tableView registerNib:[ASKTableViewCell nib] forCellReuseIdentifier:kCellIdentifier];
-    __weak XTJMinePostViewController * weakSelf = self;
+    __weak ZXMinePostViewController * weakSelf = self;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         _isRefreshing = YES;
         

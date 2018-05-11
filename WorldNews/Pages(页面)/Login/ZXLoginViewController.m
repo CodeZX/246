@@ -1,16 +1,16 @@
 //
-//  XTJLoginViewController.m
+//  ZXLoginViewController.m
 //  TJShop
 //
 //  Created by apple on 2018/3/2.
 //  Copyright © 2018年 徐冬苏. All rights reserved.
 //  登录
 
-#import "XTJLoginViewController.h"
+#import "ZXLoginViewController.h"
 #import "AppDelegate.h"
-#import "XTJRegisterViewController.h"
-#import "XTJFindPassWordViewController.h"
-@interface XTJLoginViewController ()<UITextFieldDelegate>
+#import "ZXRegisterViewController.h"
+#import "ZXFindPassWordViewController.h"
+@interface ZXLoginViewController ()<UITextFieldDelegate>
 
 @property (strong, nonatomic) UIImageView * iconImageView; ///< icon图标
 @property (strong, nonatomic) UITextField * phoneTextField; ///< 输入手机号
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation XTJLoginViewController
+@implementation ZXLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -106,13 +106,13 @@
 #pragma mark - button点击事件
 //立即注册
 - (void)registerAction {
-    XTJRegisterViewController * vc = [[XTJRegisterViewController alloc] init];
+    ZXRegisterViewController * vc = [[ZXRegisterViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 //忘记密码
 - (void)forgetPsdAction {
-    XTJFindPassWordViewController * vc = [[XTJFindPassWordViewController alloc] init];
+    ZXFindPassWordViewController * vc = [[ZXFindPassWordViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

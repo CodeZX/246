@@ -1,5 +1,5 @@
 //
-//  DSAskAboutMineViewController.h
+//  ZXAskAboutMineViewController.h
 //  FiftyOneCraftsman
 //
 //  Created by apple on 2018/2/3.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DSAskAboutMineViewController : UIViewController
+@interface ZXAskAboutMineViewController : UIViewController
 
 @property (nonatomic, strong) NSString * question;
 

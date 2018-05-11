@@ -59,11 +59,11 @@
 		A4C15AE11E60836E00956425 /* ZXEssenceBigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C15AD91E60836E00956425 /* ZXEssenceBigCell.m */; };
 		A4C15AE21E60836E00956425 /* ZXEssenceCommomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C15ADB1E60836E00956425 /* ZXEssenceCommomCell.m */; };
 		A4C15AE31E60836E00956425 /* ZXEssenceImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C15ADD1E60836E00956425 /* ZXEssenceImageCell.m */; };
-		BB2C8E99209AA12100712324 /* DSCommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E8F209AA12000712324 /* DSCommitViewController.m */; };
+		BB2C8E99209AA12100712324 /* ZXCommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E8F209AA12000712324 /* ZXCommitViewController.m */; };
 		BB2C8E9B209AA12100712324 /* ZXkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E92209AA12000712324 /* ZXkTableViewController.m */; };
 		BB2C8E9C209AA12100712324 /* DSCommentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E94209AA12000712324 /* DSCommentDetailsViewController.m */; };
 		BB2C8E9D209AA12100712324 /* DSCommentDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8E95209AA12000712324 /* DSCommentDetailsViewController.xib */; };
-		BB2C8E9E209AA12100712324 /* DSAskAboutMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E96209AA12100712324 /* DSAskAboutMineViewController.m */; };
+		BB2C8E9E209AA12100712324 /* ZXAskAboutMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8E96209AA12100712324 /* ZXAskAboutMineViewController.m */; };
 		BB2C8EA4209AADD000712324 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2C8EA3209AADD000712324 /* AliyunOSSiOS.framework */; };
 		BB2C8EA8209AADFB00712324 /* OSSImageUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EA6209AADFB00712324 /* OSSImageUploader.m */; };
 		BB2C8EAF209AAEBE00712324 /* AskContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8EAA209AAEBE00712324 /* AskContentTableViewCell.xib */; };
@@ -80,14 +80,14 @@
 		BB2C8ECC209AB69A00712324 /* XTJMineTableViewCell+XTJMine.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8ECB209AB69A00712324 /* XTJMineTableViewCell+XTJMine.m */; };
 		BB2C8EF9209ADFB200712324 /* UIBarButtonItem+JFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EF7209ADFB100712324 /* UIBarButtonItem+JFItem.m */; };
 		BB2C8EFC209AE22000712324 /* XTJMineInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EFB209AE22000712324 /* XTJMineInformationViewController.m */; };
-		BB2C8EFF209AE24900712324 /* XTJMinePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EFE209AE24900712324 /* XTJMinePostViewController.m */; };
+		BB2C8EFF209AE24900712324 /* ZXMinePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8EFE209AE24900712324 /* ZXMinePostViewController.m */; };
 		BB2C8F02209AE26A00712324 /* XTJFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F01209AE26A00712324 /* XTJFeedBackViewController.m */; };
 		BB2C8F05209AE29200712324 /* XTJSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F04209AE29200712324 /* XTJSettingViewController.m */; };
 		BB2C8F0B209AE40100712324 /* XTJFeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F07209AE40000712324 /* XTJFeedbackView.m */; };
 		BB2C8F0C209AE40100712324 /* XTJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F08209AE40000712324 /* XTJTextView.m */; };
-		BB2C8F14209AEE7200712324 /* XTJFindPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F10209AEE7200712324 /* XTJFindPassWordViewController.m */; };
-		BB2C8F15209AEE7200712324 /* XTJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F11209AEE7200712324 /* XTJLoginViewController.m */; };
-		BB2C8F16209AEE7200712324 /* XTJRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F13209AEE7200712324 /* XTJRegisterViewController.m */; };
+		BB2C8F14209AEE7200712324 /* ZXFindPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F10209AEE7200712324 /* ZXFindPassWordViewController.m */; };
+		BB2C8F15209AEE7200712324 /* ZXLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F11209AEE7200712324 /* ZXLoginViewController.m */; };
+		BB2C8F16209AEE7200712324 /* ZXRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F13209AEE7200712324 /* ZXRegisterViewController.m */; };
 		BB2C8F19209AEF5500712324 /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F17209AEF5500712324 /* NSString+Verify.m */; };
 		BB2C8F21209AF23000712324 /* XTJCompileNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F1B209AF23000712324 /* XTJCompileNameTableViewCell.m */; };
 		BB2C8F22209AF23000712324 /* XTJCompileNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8F1C209AF23000712324 /* XTJCompileNameTableViewCell.xib */; };
@@ -227,14 +227,14 @@
 		A4C15ADD1E60836E00956425 /* ZXEssenceImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXEssenceImageCell.m; sourceTree = "<group>"; };
 		B6219DF0A20F859E8B62D16F /* Pods-zx246News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zx246News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zx246News/Pods-zx246News.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2C8E8E209AA12000712324 /* ZXkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXkTableViewController.h; sourceTree = "<group>"; };
-		BB2C8E8F209AA12000712324 /* DSCommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCommitViewController.m; sourceTree = "<group>"; };
+		BB2C8E8F209AA12000712324 /* ZXCommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXCommitViewController.m; sourceTree = "<group>"; };
 		BB2C8E91209AA12000712324 /* DSCommentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCommentDetailsViewController.h; sourceTree = "<group>"; };
 		BB2C8E92209AA12000712324 /* ZXkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXkTableViewController.m; sourceTree = "<group>"; };
-		BB2C8E93209AA12000712324 /* DSCommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCommitViewController.h; sourceTree = "<group>"; };
+		BB2C8E93209AA12000712324 /* ZXCommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCommitViewController.h; sourceTree = "<group>"; };
 		BB2C8E94209AA12000712324 /* DSCommentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCommentDetailsViewController.m; sourceTree = "<group>"; };
 		BB2C8E95209AA12000712324 /* DSCommentDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSCommentDetailsViewController.xib; sourceTree = "<group>"; };
-		BB2C8E96209AA12100712324 /* DSAskAboutMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAskAboutMineViewController.m; sourceTree = "<group>"; };
-		BB2C8E97209AA12100712324 /* DSAskAboutMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAskAboutMineViewController.h; sourceTree = "<group>"; };
+		BB2C8E96209AA12100712324 /* ZXAskAboutMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXAskAboutMineViewController.m; sourceTree = "<group>"; };
+		BB2C8E97209AA12100712324 /* ZXAskAboutMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXAskAboutMineViewController.h; sourceTree = "<group>"; };
 		BB2C8EA3209AADD000712324 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
 		BB2C8EA6209AADFB00712324 /* OSSImageUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSImageUploader.m; sourceTree = "<group>"; };
 		BB2C8EA7209AADFB00712324 /* OSSImageUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSImageUploader.h; sourceTree = "<group>"; };
@@ -263,8 +263,8 @@
 		BB2C8EF8209ADFB100712324 /* UIBarButtonItem+JFItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JFItem.h"; sourceTree = "<group>"; };
 		BB2C8EFA209AE22000712324 /* XTJMineInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTJMineInformationViewController.h; sourceTree = "<group>"; };
 		BB2C8EFB209AE22000712324 /* XTJMineInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTJMineInformationViewController.m; sourceTree = "<group>"; };
-		BB2C8EFD209AE24900712324 /* XTJMinePostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTJMinePostViewController.h; sourceTree = "<group>"; };
-		BB2C8EFE209AE24900712324 /* XTJMinePostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTJMinePostViewController.m; sourceTree = "<group>"; };
+		BB2C8EFD209AE24900712324 /* ZXMinePostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXMinePostViewController.h; sourceTree = "<group>"; };
+		BB2C8EFE209AE24900712324 /* ZXMinePostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXMinePostViewController.m; sourceTree = "<group>"; };
 		BB2C8F00209AE26A00712324 /* XTJFeedBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTJFeedBackViewController.h; sourceTree = "<group>"; };
 		BB2C8F01209AE26A00712324 /* XTJFeedBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTJFeedBackViewController.m; sourceTree = "<group>"; };
 		BB2C8F03209AE29200712324 /* XTJSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTJSettingViewController.h; sourceTree = "<group>"; };
@@ -273,12 +273,12 @@
 		BB2C8F08209AE40000712324 /* XTJTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJTextView.m; sourceTree = "<group>"; };
 		BB2C8F09209AE40100712324 /* XTJFeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJFeedbackView.h; sourceTree = "<group>"; };
 		BB2C8F0A209AE40100712324 /* XTJTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJTextView.h; sourceTree = "<group>"; };
-		BB2C8F0E209AEE7200712324 /* XTJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJLoginViewController.h; sourceTree = "<group>"; };
-		BB2C8F0F209AEE7200712324 /* XTJFindPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJFindPassWordViewController.h; sourceTree = "<group>"; };
-		BB2C8F10209AEE7200712324 /* XTJFindPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJFindPassWordViewController.m; sourceTree = "<group>"; };
-		BB2C8F11209AEE7200712324 /* XTJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJLoginViewController.m; sourceTree = "<group>"; };
-		BB2C8F12209AEE7200712324 /* XTJRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJRegisterViewController.h; sourceTree = "<group>"; };
-		BB2C8F13209AEE7200712324 /* XTJRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJRegisterViewController.m; sourceTree = "<group>"; };
+		BB2C8F0E209AEE7200712324 /* ZXLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLoginViewController.h; sourceTree = "<group>"; };
+		BB2C8F0F209AEE7200712324 /* ZXFindPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFindPassWordViewController.h; sourceTree = "<group>"; };
+		BB2C8F10209AEE7200712324 /* ZXFindPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXFindPassWordViewController.m; sourceTree = "<group>"; };
+		BB2C8F11209AEE7200712324 /* ZXLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLoginViewController.m; sourceTree = "<group>"; };
+		BB2C8F12209AEE7200712324 /* ZXRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXRegisterViewController.h; sourceTree = "<group>"; };
+		BB2C8F13209AEE7200712324 /* ZXRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXRegisterViewController.m; sourceTree = "<group>"; };
 		BB2C8F17209AEF5500712324 /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
 		BB2C8F18209AEF5500712324 /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
 		BB2C8F1B209AF23000712324 /* XTJCompileNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJCompileNameTableViewCell.m; sourceTree = "<group>"; };
@@ -970,13 +970,13 @@
 			children = (
 				BB2C8E8E209AA12000712324 /* ZXkTableViewController.h */,
 				BB2C8E92209AA12000712324 /* ZXkTableViewController.m */,
-				BB2C8E93209AA12000712324 /* DSCommitViewController.h */,
-				BB2C8E8F209AA12000712324 /* DSCommitViewController.m */,
+				BB2C8E93209AA12000712324 /* ZXCommitViewController.h */,
+				BB2C8E8F209AA12000712324 /* ZXCommitViewController.m */,
 				BB2C8E91209AA12000712324 /* DSCommentDetailsViewController.h */,
 				BB2C8E94209AA12000712324 /* DSCommentDetailsViewController.m */,
 				BB2C8E95209AA12000712324 /* DSCommentDetailsViewController.xib */,
-				BB2C8E97209AA12100712324 /* DSAskAboutMineViewController.h */,
-				BB2C8E96209AA12100712324 /* DSAskAboutMineViewController.m */,
+				BB2C8E97209AA12100712324 /* ZXAskAboutMineViewController.h */,
+				BB2C8E96209AA12100712324 /* ZXAskAboutMineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1060,8 +1060,8 @@
 		BB2C8ECF209ABCE300712324 /* MinePost(我的话题) */ = {
 			isa = PBXGroup;
 			children = (
-				BB2C8EFD209AE24900712324 /* XTJMinePostViewController.h */,
-				BB2C8EFE209AE24900712324 /* XTJMinePostViewController.m */,
+				BB2C8EFD209AE24900712324 /* ZXMinePostViewController.h */,
+				BB2C8EFE209AE24900712324 /* ZXMinePostViewController.m */,
 			);
 			path = "MinePost(我的话题)";
 			sourceTree = "<group>";
@@ -1092,12 +1092,12 @@
 			isa = PBXGroup;
 			children = (
 				BB2C8F3A209BF69D00712324 /* Model */,
-				BB2C8F0E209AEE7200712324 /* XTJLoginViewController.h */,
-				BB2C8F11209AEE7200712324 /* XTJLoginViewController.m */,
-				BB2C8F12209AEE7200712324 /* XTJRegisterViewController.h */,
-				BB2C8F13209AEE7200712324 /* XTJRegisterViewController.m */,
-				BB2C8F0F209AEE7200712324 /* XTJFindPassWordViewController.h */,
-				BB2C8F10209AEE7200712324 /* XTJFindPassWordViewController.m */,
+				BB2C8F0E209AEE7200712324 /* ZXLoginViewController.h */,
+				BB2C8F11209AEE7200712324 /* ZXLoginViewController.m */,
+				BB2C8F12209AEE7200712324 /* ZXRegisterViewController.h */,
+				BB2C8F13209AEE7200712324 /* ZXRegisterViewController.m */,
+				BB2C8F0F209AEE7200712324 /* ZXFindPassWordViewController.h */,
+				BB2C8F10209AEE7200712324 /* ZXFindPassWordViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1317,7 +1317,7 @@
 				A415C4BA1E59D51D00729F82 /* ZXAllDetailCategoryController.m in Sources */,
 				A404468F1E57500D00BDC831 /* ZXAgoEssenceController.m in Sources */,
 				A415C4AD1E59C04300729F82 /* ZXAllCategoryCell.m in Sources */,
-				BB2C8E99209AA12100712324 /* DSCommitViewController.m in Sources */,
+				BB2C8E99209AA12100712324 /* ZXCommitViewController.m in Sources */,
 				A40446941E57500D00BDC831 /* ZXHomeItem.m in Sources */,
 				BB2C8EC9209AB5FD00712324 /* XTJMine.m in Sources */,
 				BB2C8F0C209AE40100712324 /* XTJTextView.m in Sources */,
@@ -1349,7 +1349,7 @@
 				BB2C8ECC209AB69A00712324 /* XTJMineTableViewCell+XTJMine.m in Sources */,
 				A418B23F1E4A23F50056F14B /* NetManager.m in Sources */,
 				BB2C8F02209AE26A00712324 /* XTJFeedBackViewController.m in Sources */,
-				BB2C8EFF209AE24900712324 /* XTJMinePostViewController.m in Sources */,
+				BB2C8EFF209AE24900712324 /* ZXMinePostViewController.m in Sources */,
 				BB2C8EC0209AB26400712324 /* XTJMineHeaderView.m in Sources */,
 				A4C15ADE1E60836E00956425 /* ZXEssenceController.m in Sources */,
 				A4109E251E520B460075208C /* ZXListDetailController.m in Sources */,
@@ -1368,23 +1368,23 @@
 				A40446901E57500D00BDC831 /* ZXAgoEssenceItem.m in Sources */,
 				A418B2421E4A27E30056F14B /* YGTabBarController.m in Sources */,
 				A40FD8301E53232F001BA42C /* ZXListDetailMovieController.m in Sources */,
-				BB2C8F14209AEE7200712324 /* XTJFindPassWordViewController.m in Sources */,
+				BB2C8F14209AEE7200712324 /* ZXFindPassWordViewController.m in Sources */,
 				A40446B01E576DFD00BDC831 /* ZXTopicFlowlayout.m in Sources */,
 				BB2C8E9B209AA12100712324 /* ZXkTableViewController.m in Sources */,
 				BB2C8EB1209AAEBE00712324 /* ASKTableViewCell.m in Sources */,
 				A4BA2A6A1E5A0E1700AA7DF3 /* ZXAllDetailPicCell.m in Sources */,
-				BB2C8F16209AEE7200712324 /* XTJRegisterViewController.m in Sources */,
+				BB2C8F16209AEE7200712324 /* ZXRegisterViewController.m in Sources */,
 				BB2C8EB0209AAEBE00712324 /* AskContentTableViewCell.m in Sources */,
 				A4C15AE01E60836E00956425 /* ZXEssenceItem.m in Sources */,
 				BB2C8F36209B0C0F00712324 /* XTJCommunity.m in Sources */,
 				BB2C8F21209AF23000712324 /* XTJCompileNameTableViewCell.m in Sources */,
-				BB2C8F15209AEE7200712324 /* XTJLoginViewController.m in Sources */,
+				BB2C8F15209AEE7200712324 /* ZXLoginViewController.m in Sources */,
 				BB2C8F53209C625000712324 /* ATJWebViewController.m in Sources */,
 				BB2C8EFC209AE22000712324 /* XTJMineInformationViewController.m in Sources */,
 				BB2C8EC1209AB26400712324 /* XTJMineTableViewCell.m in Sources */,
 				A46E4FAA1E49E72E000756D9 /* AppDelegate.m in Sources */,
 				A46E4FA71E49E72E000756D9 /* main.m in Sources */,
-				BB2C8E9E209AA12100712324 /* DSAskAboutMineViewController.m in Sources */,
+				BB2C8E9E209AA12100712324 /* ZXAskAboutMineViewController.m in Sources */,
 				A40EFABF1E5C5CAF0091A3DB /* ZXListItem.m in Sources */,
 				A418B23C1E4A22410056F14B /* BaseNetManager.m in Sources */,
 				A415C4BD1E59D52E00729F82 /* ZXAllDetailCategoryItem.m in Sources */,

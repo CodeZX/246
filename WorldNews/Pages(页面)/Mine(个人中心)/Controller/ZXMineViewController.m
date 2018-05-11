@@ -12,10 +12,10 @@
 #import "XTJMineTableViewCell.h"
 #import "XTJMineTableViewCell+XTJMine.h"
 #import "XTJMineInformationViewController.h"
-#import "XTJMinePostViewController.h"
+#import "ZXMinePostViewController.h"
 #import "XTJFeedBackViewController.h"
 #import "XTJSettingViewController.h"
-#import "XTJLoginViewController.h"
+#import "ZXLoginViewController.h"
 
 @interface ZXMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -63,7 +63,7 @@
 }
 
 - (void)didClickTap {
-    XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+    ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -84,7 +84,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if ([[JFSaveTool objectForKey:@"UserID"] isEqualToString:@""] || [JFSaveTool objectForKey:@"UserID"] == NULL) {
-        XTJLoginViewController * vc = [[XTJLoginViewController alloc] init];
+        ZXLoginViewController * vc = [[ZXLoginViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else {
         switch (indexPath.row) {
@@ -97,7 +97,7 @@
                 break;
             case 1:
             {
-                XTJMinePostViewController * vc = [[XTJMinePostViewController alloc] init];
+                ZXMinePostViewController * vc = [[ZXMinePostViewController alloc] init];
                 vc.title = @"我的话题";
                 [self.navigationController pushViewController:vc animated:YES];
             }

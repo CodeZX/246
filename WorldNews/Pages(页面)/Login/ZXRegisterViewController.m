@@ -1,14 +1,14 @@
 //
-//  XTJRegisterViewController.m
+//  ZXRegisterViewController.m
 //  TJShop
 //
 //  Created by apple on 2018/3/5.
 //  Copyright © 2018年 徐冬苏. All rights reserved.
 //  注册
 
-#import "XTJRegisterViewController.h"
+#import "ZXRegisterViewController.h"
 #import "NSString+Verify.h"
-@interface XTJRegisterViewController () <UITextFieldDelegate>
+@interface ZXRegisterViewController () <UITextFieldDelegate>
 {
     int randNumber;
 }
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation XTJRegisterViewController
+@implementation ZXRegisterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

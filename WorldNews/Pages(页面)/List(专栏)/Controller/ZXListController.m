@@ -10,6 +10,10 @@
 #import "ZXListCell.h"
 #import "ZXListItem.h"
 #import "ZXListDetailController.h"
+
+
+
+#import "MallViewController.h"
 @interface ZXListController ()
 @property (nonatomic, strong) NSArray *listArr;
 @end
@@ -23,7 +27,10 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [self configNetManager];
     [self.collectionView registerClass:[ZXListCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
+    MallViewController *mallVC = [[MallViewController alloc]init];
+    mallVC.v1 = [[UIView alloc]init];
+    mallVC.v2 = [[UIView alloc]init];
+    [self addChildViewController:mallVC];
     
 }
 

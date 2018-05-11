@@ -92,7 +92,7 @@
     }];
     
     self.playBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.playBtn setImage:[UIImage imageNamed:@"play_button"] forState:UIControlStateNormal];
+    [self.playBtn setImage:[UIImage imageNamed:@"ZXplay_button"] forState:UIControlStateNormal];
     [self.headView addSubview:self.playBtn];
     [self.playBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.offset(0);

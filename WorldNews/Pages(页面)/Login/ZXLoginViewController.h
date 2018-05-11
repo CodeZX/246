@@ -1,5 +1,5 @@
 //
-//  XTJLoginViewController.h
+//  ZXLoginViewController.h
 //  TJShop
 //
 //  Created by apple on 2018/3/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XTJLoginViewController : UIViewController
+@interface ZXLoginViewController : UIViewController
 
 @end

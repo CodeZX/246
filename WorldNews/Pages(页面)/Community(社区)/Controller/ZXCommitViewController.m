@@ -1,12 +1,12 @@
 //
-//  DSCommitViewController.m
+//  ZXCommitViewController.m
 //  FiftyOneCraftsman
 //
 //  Created by apple on 2018/1/31.
 //  Copyright © 2018年 Edgar_Guan. All rights reserved.
 //  提交
 
-#import "DSCommitViewController.h"
+#import "ZXCommitViewController.h"
 #import "OSSImageUploader.h"
 
 #import <TZImagePickerController.h>
@@ -15,7 +15,7 @@
 
 static NSString *kTempFolder = @"temp";
 
-@interface DSCommitViewController ()<UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,TZImagePickerControllerDelegate>
+@interface ZXCommitViewController ()<UITextViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,TZImagePickerControllerDelegate>
 {
     NSString *imagePath;
     NSMutableArray *_selectedPhotos;
@@ -45,7 +45,7 @@ static NSString *kTempFolder = @"temp";
 
 @end
 
-@implementation DSCommitViewController
+@implementation ZXCommitViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
