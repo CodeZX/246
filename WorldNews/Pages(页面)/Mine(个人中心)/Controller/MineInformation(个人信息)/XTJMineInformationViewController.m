@@ -10,7 +10,7 @@
 #import "XTJMineInformationModel.h"
 #import "ZXMineInformationTableViewCell.h"
 #import "XTJMineInformationTableViewCell+XTJConfigureForMineInformation.h"
-#import "XTJCompileNameViewController.h"
+#import "ZXCompileNameViewController.h"
 
 #import <TZImagePickerController.h>
 #import <TZImageManager.h>
@@ -67,7 +67,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.item == 1){
-        XTJCompileNameViewController * NameVC = [[XTJCompileNameViewController alloc] init];
+        ZXCompileNameViewController * NameVC = [[ZXCompileNameViewController alloc] init];
         [self.navigationController pushViewController:NameVC animated:YES];
     }
 }

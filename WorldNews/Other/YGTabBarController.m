@@ -45,28 +45,28 @@
 - (void)setupAllControllers
 {
     ZXPageController *pageVC = [[ZXPageController alloc] init];
-    pageVC.tabBarItem.image = @"icon_home_nor".yg_image;
-    pageVC.tabBarItem.selectedImage = @"icon_home_pre".yg_image;
+    pageVC.tabBarItem.image = @"zxicon_home_nor".yg_image;
+    pageVC.tabBarItem.selectedImage = @"zxicon_home_pre".yg_image;
     pageVC.title = @"246简讯";
     ZXNavigationViewController *homeNavi = [[ZXNavigationViewController alloc] initWithRootViewController:pageVC];
     
     ZXListController *listVC = [[ZXListController alloc] initWithCollectionViewLayout:[[ZXListFlowLayout alloc] init]];
     listVC.title = @"精选";
-    listVC.tabBarItem.image = @"icon_video_nor".yg_image;
-    listVC.tabBarItem.selectedImage = @"icon_video_pre".yg_image;
+    listVC.tabBarItem.image = @"zxicon_video_nor".yg_image;
+    listVC.tabBarItem.selectedImage = @"zxicon_video_pre".yg_image;
     ZXNavigationViewController *listNavi = [[ZXNavigationViewController alloc] initWithRootViewController:listVC];
     
     ZXkTableViewController *askVC = [[ZXkTableViewController alloc] init];
     askVC.title = @"论坛";
-    askVC.tabBarItem.image = @"icon_cummunity_nor".yg_image;
-    askVC.tabBarItem.selectedImage = @"icon_cummunity_pre".yg_image;
+    askVC.tabBarItem.image = @"zxicon_cummunity_nor".yg_image;
+    askVC.tabBarItem.selectedImage = @"zxicon_cummunity_pre".yg_image;
     ZXNavigationViewController *askNavi = [[ZXNavigationViewController alloc] initWithRootViewController:askVC];
     
      ZXMineViewController *mineVC = [[ZXMineViewController alloc] init];
     mineVC.view.backgroundColor = [UIColor whiteColor];
     mineVC.title = @"个人中心";
-    mineVC.tabBarItem.image = @"icon_person_nor".yg_image;
-    mineVC.tabBarItem.selectedImage = @"icon_person_pre".yg_image;
+    mineVC.tabBarItem.image = @"zxicon_person_nor".yg_image;
+    mineVC.tabBarItem.selectedImage = @"zxicon_person_pre".yg_image;
     ZXNavigationViewController *mineNavi = [[ZXNavigationViewController alloc] initWithRootViewController:mineVC];
     
     self.viewControllers = @[homeNavi,listNavi,askNavi,mineNavi];

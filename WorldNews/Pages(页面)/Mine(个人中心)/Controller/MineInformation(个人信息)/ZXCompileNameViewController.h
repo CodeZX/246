@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XTJCompileNameViewController : UIViewController
+@interface ZXCompileNameViewController : UIViewController
 
 @end

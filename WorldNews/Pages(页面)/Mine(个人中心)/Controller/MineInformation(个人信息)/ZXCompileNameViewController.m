@@ -6,12 +6,12 @@
 //  Copyright © 2017年 JiFeng. All rights reserved.
 //
 
-#import "XTJCompileNameViewController.h"
+#import "ZXCompileNameViewController.h"
 #import "XTJCompileNameTableViewCell.h"
 #define KBGColor RGB(242, 242, 242)
 
 
-@interface XTJCompileNameViewController ()<UITableViewDelegate,UITableViewDataSource,XTJCompileNameTableViewCellDelegate>
+@interface ZXCompileNameViewController ()<UITableViewDelegate,UITableViewDataSource,XTJCompileNameTableViewCellDelegate>
 
 
 @property (strong, nonatomic) UITableView * tableView;
@@ -24,7 +24,7 @@
 
 static NSString * const kCellIdentifier = @"CompileNameCell.identifier";
 
-@implementation XTJCompileNameViewController
+@implementation ZXCompileNameViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

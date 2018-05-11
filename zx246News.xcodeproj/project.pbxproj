@@ -97,7 +97,7 @@
 		BB2C8F2C209AF35600712324 /* XTJMineInformationTableViewCell+XTJConfigureForMineInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F29209AF35600712324 /* XTJMineInformationTableViewCell+XTJConfigureForMineInformation.m */; };
 		BB2C8F2D209AF35600712324 /* MineInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2C8F2A209AF35600712324 /* MineInformation.plist */; };
 		BB2C8F30209AF49F00712324 /* UILabel+JFStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F2E209AF49F00712324 /* UILabel+JFStyle.m */; };
-		BB2C8F33209B073A00712324 /* XTJCompileNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F32209B073A00712324 /* XTJCompileNameViewController.m */; };
+		BB2C8F33209B073A00712324 /* ZXCompileNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F32209B073A00712324 /* ZXCompileNameViewController.m */; };
 		BB2C8F36209B0C0F00712324 /* XTJCommunity.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F35209B0C0F00712324 /* XTJCommunity.m */; };
 		BB2C8F39209B17D900712324 /* ASKTableViewCell+CommunityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F38209B17D900712324 /* ASKTableViewCell+CommunityItem.m */; };
 		BB2C8F3D209BF6B300712324 /* XTJRegisterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2C8F3C209BF6B300712324 /* XTJRegisterItem.m */; };
@@ -294,8 +294,8 @@
 		BB2C8F2A209AF35600712324 /* MineInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MineInformation.plist; sourceTree = "<group>"; };
 		BB2C8F2E209AF49F00712324 /* UILabel+JFStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JFStyle.m"; sourceTree = "<group>"; };
 		BB2C8F2F209AF49F00712324 /* UILabel+JFStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+JFStyle.h"; sourceTree = "<group>"; };
-		BB2C8F31209B073A00712324 /* XTJCompileNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJCompileNameViewController.h; sourceTree = "<group>"; };
-		BB2C8F32209B073A00712324 /* XTJCompileNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJCompileNameViewController.m; sourceTree = "<group>"; };
+		BB2C8F31209B073A00712324 /* ZXCompileNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCompileNameViewController.h; sourceTree = "<group>"; };
+		BB2C8F32209B073A00712324 /* ZXCompileNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXCompileNameViewController.m; sourceTree = "<group>"; };
 		BB2C8F34209B0C0F00712324 /* XTJCommunity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTJCommunity.h; sourceTree = "<group>"; };
 		BB2C8F35209B0C0F00712324 /* XTJCommunity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTJCommunity.m; sourceTree = "<group>"; };
 		BB2C8F37209B17D800712324 /* ASKTableViewCell+CommunityItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASKTableViewCell+CommunityItem.h"; sourceTree = "<group>"; };
@@ -1071,8 +1071,8 @@
 			children = (
 				BB2C8EFA209AE22000712324 /* XTJMineInformationViewController.h */,
 				BB2C8EFB209AE22000712324 /* XTJMineInformationViewController.m */,
-				BB2C8F31209B073A00712324 /* XTJCompileNameViewController.h */,
-				BB2C8F32209B073A00712324 /* XTJCompileNameViewController.m */,
+				BB2C8F31209B073A00712324 /* ZXCompileNameViewController.h */,
+				BB2C8F32209B073A00712324 /* ZXCompileNameViewController.m */,
 			);
 			path = "MineInformation(个人信息)";
 			sourceTree = "<group>";
@@ -1336,7 +1336,7 @@
 				BB2C8F23209AF23000712324 /* ZXMineInformationTableViewCell.m in Sources */,
 				BB2C8F19209AEF5500712324 /* NSString+Verify.m in Sources */,
 				BB515E072093112E00B59189 /* UIImage+Extension.m in Sources */,
-				BB2C8F33209B073A00712324 /* XTJCompileNameViewController.m in Sources */,
+				BB2C8F33209B073A00712324 /* ZXCompileNameViewController.m in Sources */,
 				1859A58B20A41E9D00FFB7EF /* MallViewController.m in Sources */,
 				BB2C8F40209BF7F100712324 /* XTJLoginItem.m in Sources */,
 				BB2C8F05209AE29200712324 /* XTJSettingViewController.m in Sources */,
